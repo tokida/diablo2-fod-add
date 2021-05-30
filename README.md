@@ -3,7 +3,16 @@
 original module :https://www.moddb.com/mods/the-forces-of-darkness
 
 * 1920x1080 (upscale by ddraw) 
+
 ![act1_01](img/screenshot_01.png)
+
+![act1_02](img/screenshot_02.png)
+
+
+## Mod Information
+* [Readme](readme.txt)
+* [charm affixes](charmaffixes.txt)
+* [crafting recipes](craftingrecipes.txt)
 
 ## Changelog
 

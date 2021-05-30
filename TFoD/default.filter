@@ -1,0 +1,613 @@
+// +----------------------------------------------------------------------------+
+// |                                                                            |
+// |     WOLFIE'S PROJECT DIABLO 2 FILTER (BASIC)                               |
+// |     GitHub: https://github.com/WolfieeifloW/pd2filter                      |
+// |     Discord: https://discord.gg/8K2QkjAA8g                                 |
+// |     Made By: @WolfieeifloW#6431                                            |
+// |                                                                            |
+// +----------------------------------------------------------------------------+
+//
+// Welcome to Wolfie's Project Diablo 2 Loot Filter, Basic version.
+// This filter is a very basic tempalte which people can use to build their own filter.
+//
+// No support will be given for this filter.
+// Only issues with lines already in here will be addressed in my Discord (https://discord.gg/8K2QkjAA8g) or in the #lootfilter channel on the PD2 Discord (http://discord.gg/projectdiablo2).
+
+// Filter lines start here
+// Quest items
+ItemDisplay[bks]: %RED%%NAME%%MAP-62% // Scroll of Inifuss
+ItemDisplay[bkd]: %RED%%NAME%%MAP-62% // Scroll of Inifuss, deciphered
+ItemDisplay[leg]: %RED%%NAME%%MAP-62%{Cube in Act 1 to open Cow Level} // Wirt's Leg
+ItemDisplay[hdm]: %RED%%NAME%%MAP-62%{Give to Charsi in Act 1} // Horadric Malus
+ItemDisplay[ass]: %RED%Book of Skill%MAP-62% // Book of Skill
+ItemDisplay[tr1]: //%NAME%{%TAN%Not required%NL%} // Horadric Scroll
+ItemDisplay[box]: %RED%%NAME%%MAP-62% // Horadric Cube
+ItemDisplay[hst]: %RED%%NAME%%MAP-62%{Act 2: Tal Rashas Tomb%NL%Place in Tomb Orifice in} // Horadric Staff
+ItemDisplay[vip]: %RED%%NAME%%MAP-62%{Cube w/ Staff of Kings} // Amulet of the Viper
+ItemDisplay[msf]: %RED%%NAME%%MAP-62%{Cube w/ Amulet of the Viper} // Staff of Kings
+ItemDisplay[j34]: %RED%%NAME%%MAP-62% // A Jade Figurine
+ItemDisplay[g34]: %RED%%NAME%%MAP-62% // The Golden Bird
+ItemDisplay[xyz]: %RED%Potion of Life%MAP-62% // Potion of Life
+ItemDisplay[g33]: %RED%%NAME%%MAP-62%{Give to Ormus in Act 3} // Gidbinn
+ItemDisplay[qey]: %RED%%NAME%%MAP-62% // Khalim's Eye
+ItemDisplay[qbr]: %RED%%NAME%%MAP-62% // Khalim's Brain
+ItemDisplay[qhr]: %RED%%NAME%%MAP-62% // Khalim's Heart
+ItemDisplay[qf1]: %RED%%NAME%%MAP-62%{Cube w/ Eye, Brain, & Heart} // Khalim's Flail
+ItemDisplay[qf2]: %RED%%NAME%%MAP-62%{Hit Compelling Orb in Act 3: Travincal} // Khalim's Will
+ItemDisplay[bbb]: %RED%%NAME%%MAP-62% // Lam Esen's Tome
+ItemDisplay[mss]: %RED%%NAME%%MAP-62% // Mephisto's Soulstone
+ItemDisplay[hfh]: %RED%%NAME%%MAP-62%{Hit Hellforge in Act 4: River of Flame} // Hellforge Hammer
+ItemDisplay[ice]: %RED%Malah's Potion%MAP-62% // Malah's Potion
+ItemDisplay[tr2]: %RED%Scroll of Resistance%MAP-62% // Scroll of Resistance
+
+// Essences
+ItemDisplay[tes]: %RED%%NAME%%MAP-62% // Twisted Essence of Suffering
+ItemDisplay[ceh]: %RED%%NAME%%MAP-62% // Charged Essence of Hatred
+ItemDisplay[bet]: %RED%%NAME%%MAP-62% // Burning Essence of Terror
+ItemDisplay[fed]: %RED%%NAME%%MAP-62% // Festering Essence of Destruction
+ItemDisplay[toa]: %RED%%NAME%%MAP-62% // Diablo's Soulstone
+
+// Keys & Organs
+ItemDisplay[pk3]: %RED%%NAME%%MAP-62% // Key of Destruction
+ItemDisplay[pk2]: %RED%%NAME%%MAP-62% // Key of Hate
+ItemDisplay[pk1]: %RED%%NAME%%MAP-62% // Key of Terror
+ItemDisplay[bey]: %RED%%NAME%%MAP-62% // Baal's Eye
+ItemDisplay[dhn]: %RED%%NAME%%MAP-62% // Diablo's Horn
+ItemDisplay[mbr]: %RED%%NAME%%MAP-62% // Mephisto's Brain
+
+// Gemstones
+ItemDisplay[hrt]: %ORANGE%%NAME%%MAP-68% // Shivering Gemstone
+ItemDisplay[brz]: %ORANGE%%NAME%%MAP-68% // Ember Gemstone
+ItemDisplay[jaw]: %ORANGE%%NAME%%MAP-68% // Shocking Gemstone
+ItemDisplay[eyz]: %ORANGE%%NAME%%MAP-68% // Toxic Gemstone
+ItemDisplay[hrn]: %ORANGE%%NAME%%MAP-68% // Heavenly Gemstone
+ItemDisplay[tal]: %ORANGE%%NAME%%MAP-68% // Stormy Gemstone
+ItemDisplay[flg]: %ORANGE%%NAME%%MAP-68% // Freezing Gemstone
+ItemDisplay[fng]: %ORANGE%%NAME%%MAP-68% // Flaming Gemstone
+ItemDisplay[qll]: %ORANGE%%NAME%%MAP-68% // Static Gemstone
+ItemDisplay[sol]: %ORANGE%%NAME%%MAP-68% // Pestilent Gemstone
+ItemDisplay[scz]: %ORANGE%%NAME%%MAP-68% // Bone Gemstone
+ItemDisplay[spe]: %ORANGE%%NAME%%MAP-68% // Ferocious Gemstone
+
+// Custom Items
+ItemDisplay[elx]: %RED%%NAME%%MAP-66% // Gem Pile
+ItemDisplay[hpo]: %RED%%NAME%%MAP-66% // Blacksmith's Whetstone
+ItemDisplay[mpo]: %RED%%NAME%%MAP-66% // Sharpened Chisel
+ItemDisplay[hpf]: %RED%%NAME%%MAP-66% // Forged Tool
+ItemDisplay[mpf]: %RED%%NAME%%MAP-66% // Lesser Malus
+ItemDisplay[tch]: %RED%%NAME%%MAP-66% // Greater Malus
+ItemDisplay[luv]: %RED%%NAME%%MAP-66% // Magic Dice
+ItemDisplay[hrb]: %RED%%NAME%%MAP-66% // Rare Token
+ItemDisplay[rps]: %RED%%NAME%%MAP-66% // Mystic Orb
+ItemDisplay[rpl]: %RED%%NAME%%MAP-66% // Kurast Sphere
+ItemDisplay[bps]: %RED%%NAME%%MAP-66% // Enchanted Malus
+ItemDisplay[bpl]: %RED%%NAME%%MAP-66% // Crystal of Corruption
+ItemDisplay[ear]: %RED%%NAME%%MAP-66% // Tempering Catalyst
+
+// Runes
+ItemDisplay[RUNE<11]: %ORANGE%%NAME% %ORANGE%(%RUNENUM%)%MAP-68% // El-Thul
+ItemDisplay[RUNE>10 RUNE<24]: %ORANGE%%NAME% %ORANGE%(%RUNENUM%)%MAP-68% // Amn-Mal
+ItemDisplay[RUNE>23]: %ORANGE%%NAME% %ORANGE%(%RUNENUM%)%MAP-68% // Ist-Zod
+
+// Eth & Socket in Item Name
+ItemDisplay[ETH]: %NAME% %GRAY%[Eth]%CONTINUE% // Add "[Eth]" to ethereal item's names (eg "Quilted Armor [Eth]")
+ItemDisplay[!RW !ETH SOCK>0]: %NAME% [%SOCKETS%]%CONTINUE% // Add number of sockets to the end of socketed items' names (eg "Quilted Armor [2]")
+ItemDisplay[!RW ETH SOCK>0]: %NAME% [%SOCKETS%]%CONTINUE% // No space between eth and socket display if item is eth (eg "Quilted Armor [Eth][2]")
+
+// Unique Items
+ItemDisplay[UNI NORM !ID]: %PURPLE%* %GOLD%%NAME%%MAP-68% // This will show and notify for ALL other unidentified unique items
+ItemDisplay[UNI amu !ID]: %PURPLE%* %GOLD%%NAME%%MAP-68% // This will show and notify for ALL other unidentified unique items
+ItemDisplay[UNI rin !ID]: %PURPLE%* %GOLD%%NAME%%MAP-68% // This will show and notify for ALL other unidentified unique items
+ItemDisplay[UNI jew !ID]: %PURPLE%* %GOLD%%NAME%%MAP-68% // This will show and notify for ALL other unidentified unique items
+ItemDisplay[UNI EXC !ID]: %PURPLE%** %GOLD%%NAME%%MAP-68% // This will show and notify for ALL other unidentified unique items
+ItemDisplay[UNI ELI !ID]: %PURPLE%*** %GOLD%%NAME%%MAP-68% // This will show and notify for ALL other unidentified unique items
+
+// Set Items
+ItemDisplay[SET NORM !ID]: %PURPLE%* %GREEN%%NAME%%MAP-84% // This will show and notify for ALL unidentified set items
+ItemDisplay[SET amu !ID]: %PURPLE%* %GREEN%%NAME%%MAP-84% // This will show and notify for ALL unidentified set items
+ItemDisplay[SET rin !ID]: %PURPLE%* %GREEN%%NAME%%MAP-84% // This will show and notify for ALL unidentified set items
+ItemDisplay[SET EXC !ID]: %PURPLE%** %GREEN%%NAME%%MAP-84% // This will show and notify for ALL unidentified set items
+ItemDisplay[SET ELI !ID]: %PURPLE%*** %GREEN%%NAME%%MAP-84% // This will show and notify for ALL unidentified set items
+
+// Rare Items
+// All rares will be visible but only the below types will notify on drop.
+ItemDisplay[RARE jew !ID]: %RED%* %YELLOW%%NAME%%MAP-A8% // Jewels
+ItemDisplay[RARE rin !ID]: %RED%* %YELLOW%%NAME%%MAP-A8% // Rings
+ItemDisplay[RARE amu !ID]: %RED%* %YELLOW%%NAME%%MAP-A8% // Amulets
+ItemDisplay[RARE cm1 !ID]: %RED%* %YELLOW%%NAME%%MAP-A8% // Small Charms
+ItemDisplay[RARE cm2 !ID]: %RED%* %YELLOW%%NAME%%MAP-A8% // Large Charms
+ItemDisplay[RARE cm3 !ID]: %RED%* %YELLOW%%NAME%%MAP-A8% // Great Charms
+ItemDisplay[RARE CIRC !ID]: %RED%* %YELLOW%%NAME%%MAP-A8% // Circlets
+ItemDisplay[RARE GLOVES NORM !ID]: %RED%* %YELLOW%%NAME%%MAP-A8% // Gloves
+ItemDisplay[RARE GLOVES EXC !ID]: %RED%** %YELLOW%%NAME%%MAP-A8% // Gloves
+ItemDisplay[RARE GLOVES ELI !ID]: %RED%*** %YELLOW%%NAME%%MAP-A8% // Gloves
+ItemDisplay[RARE BOOTS NORM !ID]: %RED%* %YELLOW%%NAME%%MAP-A8% // Boots
+ItemDisplay[RARE BOOTS EXC !ID]: %RED%** %YELLOW%%NAME%%MAP-A8% // Boots
+ItemDisplay[RARE BOOTS ELI !ID]: %RED%*** %YELLOW%%NAME%%MAP-A8% // Boots
+ItemDisplay[RARE DRU NORM !ID]: %RED%* %YELLOW%%NAME%%MAP-A8% // Druid pelts
+ItemDisplay[RARE DRU EXC !ID]: %RED%** %YELLOW%%NAME%%MAP-A8% // Druid pelts
+ItemDisplay[RARE DRU ELI !ID]: %RED%*** %YELLOW%%NAME%%MAP-A8% // Druid pelts
+
+// Magic Items
+ItemDisplay[MAG !ID CIRC]: %NAME%%MAP-97% // All unidentified Circlets
+ItemDisplay[MAG !ID jew]: %NAME%%DOT-97% // All unidentified jewels
+ItemDisplay[MAG !ID cm1]: %RED%* %BLUE%%NAME%%MAP-97% // Small Charms
+ItemDisplay[MAG !ID cm2]: %RED%* %BLUE%%NAME%%MAP-97% // Large Charms
+ItemDisplay[MAG !ID cm3]: %RED%* %BLUE%%NAME%%MAP-97% // Grand Charms
+ItemDisplay[MAG !ID jew]: %RED%* %BLUE%%NAME%%MAP-97% // All unidentified jewels
+
+// Upgrade recipes
+ItemDisplay[RARE ID NORM ARMOR]: %NAME%%CONTINUE%{%ORANGE%Upgrade Recipe: %TAN%Cube w/ Lesser Malus}
+ItemDisplay[RARE ID EXC ARMOR]: %NAME%%CONTINUE%{%ORANGE%Upgrade Recipe: %TAN%Cube w/ Greater Malus}
+ItemDisplay[RARE ID NORM WEAPON]: %NAME%%CONTINUE%{%ORANGE%Upgrade Recipe: %TAN%Cube w/ Lesser Malus}
+ItemDisplay[RARE ID EXC WEAPON]: %NAME%%CONTINUE%{%ORANGE%Upgrade Recipe: %TAN%Cube w/ Greater Malus}
+ItemDisplay[MAG ID NORM ARMOR]: %NAME%%CONTINUE%{%ORANGE%Upgrade Recipe: %TAN%Cube w/ Lesser Malus}
+ItemDisplay[MAG ID EXC ARMOR]: %NAME%%CONTINUE%{%ORANGE%Upgrade Recipe: %TAN%Cube w/ Greater Malus}
+ItemDisplay[MAG ID NORM WEAPON]: %NAME%%CONTINUE%{%ORANGE%Upgrade Recipe: %TAN%Cube w/ Lesser Malus}
+ItemDisplay[MAG ID EXC WEAPON]: %NAME%%CONTINUE%{%ORANGE%Upgrade Recipe: %TAN%Cube w/ Greater Malus}
+ItemDisplay[SET ID NORM ARMOR]: %NAME%%CONTINUE%{%ORANGE%Upgrade Recipe: %TAN%Cube w/ Lesser Malus}
+ItemDisplay[SET ID EXC ARMOR]: %NAME%%CONTINUE%{%ORANGE%Upgrade Recipe: %TAN%Cube w/ Greater Malus}
+ItemDisplay[SET ID NORM WEAPON]: %NAME%%CONTINUE%{%ORANGE%Upgrade Recipe: %TAN%Cube w/ Lesser Malus}
+ItemDisplay[SET ID EXC WEAPON]: %NAME%%CONTINUE%{%ORANGE%Upgrade Recipe: %TAN%Cube w/ Greater Malus}
+ItemDisplay[UNI ID NORM ARMOR]: %NAME%%CONTINUE%{%ORANGE%Upgrade Recipe: %TAN%Cube w/ Lesser Malus}
+ItemDisplay[UNI ID EXC ARMOR]: %NAME%%CONTINUE%{%ORANGE%Upgrade Recipe: %TAN%Cube w/ Greater Malus}
+ItemDisplay[UNI ID NORM WEAPON]: %NAME%%CONTINUE%{%ORANGE%Upgrade Recipe: %TAN%Cube w/ Lesser Malus}
+ItemDisplay[UNI ID EXC WEAPON]: %NAME%%CONTINUE%{%ORANGE%Upgrade Recipe: %TAN%Cube w/ Greater Malus}
+ItemDisplay[CRAFT ID NORM ARMOR]: %NAME%%CONTINUE%{%ORANGE%Upgrade Recipe: %TAN%Cube w/ Lesser Malus}
+ItemDisplay[CRAFT ID EXC ARMOR]: %NAME%%CONTINUE%{%ORANGE%Upgrade Recipe: %TAN%Cube w/ Greater Malus}
+ItemDisplay[CRAFT ID NORM WEAPON]: %NAME%%CONTINUE%{%ORANGE%Upgrade Recipe: %TAN%Cube w/ Lesser Malus}
+ItemDisplay[CRAFT ID EXC WEAPON]: %NAME%%CONTINUE%{%ORANGE%Upgrade Recipe: %TAN%Cube w/ Greater Malus}
+
+// Potions
+ItemDisplay[hp1 DIFF<1]: %RED%+%WHITE%HP1 // Minor Healing Potion
+ItemDisplay[hp1 DIFF>0]: // Hides Minor Healing Potions after Normal difficulty
+ItemDisplay[hp2 DIFF<1]: %RED%+%WHITE%HP2 // Light Healing Potion
+ItemDisplay[hp2 DIFF>0]: // Hides Light Healing Potions after Normal difficulty
+ItemDisplay[hp3 DIFF<2]: %RED%+%WHITE%HP3 // Healing Potion
+ItemDisplay[hp3 DIFF>1]: // Hides Healing Potions after after Nightmare difficulty
+ItemDisplay[hp4 DIFF<2]: %RED%+%WHITE%HP4 // Greater Healing Potion
+ItemDisplay[hp4 DIFF>1]: // Hides Greater Healing Potion after Nightmare difficulty
+ItemDisplay[hp5]: %RED%+%WHITE%HP5 // Super Healing Potion
+ItemDisplay[mp1 DIFF<1]: %BLUE%+%WHITE%MP1 // Minor Mana Potion
+ItemDisplay[mp1 DIFF>0]: // Hides Minor Mana Potions after Normal difficulty
+ItemDisplay[mp2 DIFF<1]: %BLUE%+%WHITE%MP2 // Light Mana Potion
+ItemDisplay[mp2 DIFF>0]: // Hides Light Mana Potions after Normal difficulty
+ItemDisplay[mp3 DIFF<2]: %BLUE%+%WHITE%MP3 // Mana Potion
+ItemDisplay[mp3 DIFF>1]: // Hides Mana Potions after after Nightmare difficulty
+ItemDisplay[mp4 DIFF<2]: %BLUE%+%WHITE%MP4 // Greater Mana Potion
+ItemDisplay[mp4 DIFF>1]: // Hides Greater Mana Potion after Nightmare difficulty
+ItemDisplay[mp5]: %BLUE%+%WHITE%MP5 // Super Mana Potion
+ItemDisplay[rvs]: %PURPLE%+%WHITE%35% // Rejuv Potion
+ItemDisplay[rvl]: %PURPLE%+%WHITE%100%%PURPLE%+%WHITE% // Full Rejuv Potion
+ItemDisplay[vps DIFF<2]: %WHITE%+%WHITE%Stam // Stamina Potion
+ItemDisplay[vps DIFF>1]: // Hides Stamina Potion after Nightmare difficulty
+ItemDisplay[yps DIFF<2]: %GREEN%+%WHITE%Anti // Antidote Potion
+ItemDisplay[yps DIFF>1]: // Antidote Potion after Nightmare difficulty
+ItemDisplay[wms DIFF<2]: %BLUE%+%WHITE%Thaw // Thawing Potion
+ItemDisplay[wms DIFF>1]: // Thawing Potion after Nightmare difficulty
+ItemDisplay[gpl DIFF<1]: %GREEN%+%WHITE%Strang // Strangling Potion
+ItemDisplay[gpl DIFF>0]: // Strangling Potion after Normal difficulty
+ItemDisplay[gpm DIFF<1]: %GREEN%+%WHITE%Chok // Choking Potion
+ItemDisplay[gpm DIFF>0]: // Choking Potion after Normal difficulty
+ItemDisplay[gps DIFF<1]: %GREEN%+%WHITE%Ranc // Rancid Potion
+ItemDisplay[gps DIFF>0]: // Rancid Potion after Normal difficulty
+ItemDisplay[opl DIFF<1]: %ORANGE%+%WHITE%Fulm // Fulminating Potion
+ItemDisplay[opl DIFF>0]: // Fulminating Potion after Normal difficulty
+ItemDisplay[opm DIFF<1]: %ORANGE%+%WHITE%Explo // Exploding Potion
+ItemDisplay[opm DIFF>0]: // Exploding Potion after Normal difficulty
+ItemDisplay[ops DIFF<1]: %ORANGE%+%WHITE%Oil // Oil Potion
+ItemDisplay[ops DIFF>0]: // Oil Potion after Normal difficulty
+
+// Scrolls & Tomes
+ItemDisplay[isc DIFF<1]: ID%RED%+%WHITE% // Scroll of Identify
+ItemDisplay[isc DIFF>0]: // Hides Scroll of Identify after Normal difficulty
+ItemDisplay[tsc DIFF<1]: TP%BLUE%+%WHITE% // Scroll of Town Portal
+ItemDisplay[tsc DIFF>0]: // Hides Scroll of Town Portal after Normal difficulty
+ItemDisplay[ibk]: %RED%+%WHITE%ID%RED%+%WHITE% // Tome of Identify
+ItemDisplay[tbk]: %BLUE%+%WHITE%TP%BLUE%+%WHITE% // Tome of Town Portal
+ItemDisplay[key]: %NAME%{%WHITE%Max quantity: 20} // Key Quantity
+
+// Vendor Items
+//ItemDisplay[MAG (CLSK0>1 AND TABSK2>2) ZON]: %GREEN%(+5 Jav) %BLUE%%NAME% // +2 Amazon, +3 Javelin Skills Javelin
+//ItemDisplay[MAG (TABSK2>2 AND IAS>19) GLOVES]: %GREEN%(+3 Jav 20IAS) %BLUE%%NAME% // 3 Javelin Skills, 20 IAS glove
+//ItemDisplay[MAG TABSK2>5 ZON]: %GREEN%(+6 Jav) %BLUE%%NAME% // +6 Javelin Skills Javelin
+//ItemDisplay[MAG (CLSK6>1 AND SK271>2) SIN]: %GREEN%(+5 CLS) %BLUE%%NAME% // +2 Assassin, +3 Chain Lightning Sentry claw
+//ItemDisplay[MAG (TABSK48>2 AND SK271>2) SIN]: %GREEN%(+6 CLS) %BLUE%%NAME% // +3 Trap, +3 Chain Lightning Sentry claw
+//ItemDisplay[MAG TABSK34>2 WEAPON]: %GREEN%(+3 BO) %BLUE%%NAME% // +3 Battle Order weapon
+//ItemDisplay[MAG CHSK54>0 STAFF]: %GREEN%(Teleport) %BLUE%%NAME% // Teleport charges
+//ItemDisplay[MAG CHSK357>0 STAFF]: %GREEN%(Blink) %BLUE%%NAME% // Blink charges
+//ItemDisplay[MAG CHSK66>0 WAND]: %GREEN%(Amp Dmg) %BLUE%%NAME% // Amplify Damage charges
+//ItemDisplay[MAG CHSK86>0 WAND]: %GREEN%(Attract) %BLUE%%NAME% // Attract charges
+//ItemDisplay[MAG CHSK87>0 WAND]: %GREEN%(Decrep) %BLUE%%NAME% // Decrepify charges
+//ItemDisplay[MAG CHSK82>0 WAND]: %GREEN%(Life Tap) %BLUE%%NAME% // Life tap charges
+//ItemDisplay[MAG CHSK91>0 WAND]: %GREEN%(Lower Res) %BLUE%%NAME% // Lower Resist charges
+//ItemDisplay[MAG CHSK72>0 WAND]: %GREEN%(Weaken) %BLUE%%NAME% // Weaken charges
+//ItemDisplay[MAG (SOCK>3 AND LIFE>89) CHEST]: %GREEN%(Whale) %BLUE%%NAME% // 4 sockets, 90+ Health Armor
+//ItemDisplay[MAG (SOCK>3 AND FBR>1) uit]: %GREEN%(JMoD) %BLUE%%NAME% // JMoD Monarch
+
+// Base Items
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=0 ILVL>25 CIRC]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=2 CIRC]: %GRAY%%NAME%{%ORANGE%Lore, Nadir%NL%%TAN%Possible RWs:} // All tiers, 2os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=3 CIRC]: %GRAY%%NAME%{%ORANGE%Delirium, Dream, Radiance%NL%%TAN%Possible RWs:} // All tiers, 3os
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=0 ILVL>25 CIRC]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=2 CIRC]: %GRAY%%NAME%{%ORANGE%Lore, Nadir%NL%%TAN%Possible RWs:} // All tiers, 2os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=3 CIRC]: %GRAY%%NAME%{%ORANGE%Delirium, Dream, Radiance%NL%%TAN%Possible RWs:} // All tiers, 3os, Superior
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=0 ILVL>25 CIRC]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=2 CIRC]: %GRAY%%NAME%{%ORANGE%Lore, Nadir%NL%%TAN%Possible RWs:} // All tiers, 2os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=3 CIRC]: %GRAY%%NAME%{%ORANGE%Delirium, Dream, Radiance%NL%%TAN%Possible RWs:} // All tiers, 3os, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=0 ILVL>25 CIRC]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=2 CIRC]: %GRAY%%NAME%{%ORANGE%Lore, Nadir%NL%%TAN%Possible RWs:} // All tiers, 2os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=3 CIRC]: %GRAY%%NAME%{%ORANGE%Delirium, Dream, Radiance%NL%%TAN%Possible RWs:} // All tiers, 3os, Superior, Eth
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=0 (TABSK0>2 OR TABSK1>2) ZON BOW]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // 0os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=2 (TABSK0>2 OR TABSK1>2) ZON BOW]: %GRAY%%NAME%{%ORANGE%Zephyr%NL%%TAN%Possible RWs:} // 2os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=3 (TABSK0>2 OR TABSK1>2) ZON BOW]: %GRAY%%NAME%{%ORANGE%Plague, Venom%NL%Edge, Melody,%NL%%TAN%Possible RWs:} // 3os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=4 (TABSK0>2 OR TABSK1>2) ZON BOW]: %GRAY%%NAME%{%ORANGE%Passion, Phoenix, Wrath%NL%Harmony, Hand of Justice, Ice,%NL%Brand, Faith, Fortitude,%NL%%TAN%Possible RWs:} // 4os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=5 (TABSK0>2 OR TABSK1>2) ZON BOW]: %GRAY%%NAME%{%ORANGE%Call to Arms%NL%%TAN%Possible RWs:} // 5os
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=0 (TABSK0>2 OR TABSK1>2) ZON BOW]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // Superior, 0os
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=2 (TABSK0>2 OR TABSK1>2) ZON BOW]: %GRAY%%NAME%{%ORANGE%Zephyr%NL%%TAN%Possible RWs:} // Superior, 2os
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=3 (TABSK0>2 OR TABSK1>2) ZON BOW]: %GRAY%%NAME%{%ORANGE%Plague, Venom%NL%Edge, Melody,%NL%%TAN%Possible RWs:} // Superior, 3os
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=4 (TABSK0>2 OR TABSK1>2) ZON BOW]: %GRAY%%NAME%{%ORANGE%Passion, Phoenix, Wrath%NL%Harmony, Hand of Justice, Ice,%NL%Brand, Faith, Fortitude,%NL%%TAN%Possible RWs:} // Superior, 4os
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=5 (TABSK0>2 OR TABSK1>2) ZON BOW]: %GRAY%%NAME%{%ORANGE%Call to Arms%NL%%TAN%Possible RWs:} // Superior, 5os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=0 TABSK2>2 SPEAR !THROWING ZON]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // 0os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=2 TABSK2>2 SPEAR !THROWING ZON]: %GRAY%%NAME%{%ORANGE%Stength%NL%%TAN%Possible RWs:} // 2os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=3 TABSK2>2 SPEAR !THROWING ZON]: %GRAY%%NAME%{%ORANGE%Malice, Plague, Venom, Wind%NL%Crescent Moon, Fury,%NL%%TAN%Possible RWs:} // 3os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=4 TABSK2>2 SPEAR !THROWING ZON]: %GRAY%%NAME%{%ORANGE%Phoenix, Pride, Rift%NL%Hand of Justice, Passion,%NL%Fortitude, Infinity, Insight,%NL%%TAN%Possible RWs:} // 4os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=5 TABSK2>2 SPEAR !THROWING ZON]: %GRAY%%NAME%{%ORANGE%Eternity, Honor, Obedience%NL%Call to Arms, Destruction, Doom,%NL%%TAN%Possible RWs:} // 5os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=6 TABSK2>2 SPEAR !THROWING ZON]: %GRAY%%NAME%{%ORANGE%Breath of the Dying, Silence%NL%%TAN%Possible RWs:} // 6os
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=0 TABSK2>2 SPEAR !THROWING ZON]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // Superior, 0os
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=2 TABSK2>2 SPEAR !THROWING ZON]: %GRAY%%NAME%{%ORANGE%Stength%NL%%TAN%Possible RWs:} // Superior, 2os
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=3 TABSK2>2 SPEAR !THROWING ZON]: %GRAY%%NAME%{%ORANGE%Malice, Plague, Venom, Wind%NL%Crescent Moon, Fury,%NL%%TAN%Possible RWs:} // Superior, 3os
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=4 TABSK2>2 SPEAR !THROWING ZON]: %GRAY%%NAME%{%ORANGE%Phoenix, Pride, Rift%NL%Hand of Justice, Passion,%NL%Fortitude, Infinity, Insight,%NL%%TAN%Possible RWs:} // Superior, 4os
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=5 TABSK2>2 SPEAR !THROWING ZON]: %GRAY%%NAME%{%ORANGE%Eternity, Honor, Obedience%NL%Call to Arms, Destruction, Doom,%NL%%TAN%Possible RWs:} // Superior, 5os
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=6 TABSK2>2 SPEAR !THROWING ZON]: %GRAY%%NAME%{%ORANGE%Breath of the Dying, Silence%NL%%TAN%Possible RWs:} // Superior, 6os
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=0 TABSK2>2 SPEAR !THROWING ZON]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // Eth, 0os
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=5 TABSK2>2 SPEAR !THROWING ZON]: %GRAY%%NAME%{%ORANGE%Eternity%NL%%TAN%Possible RWs:} // Eth, 5os
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=6 TABSK2>2 SPEAR !THROWING ZON]: %GRAY%%NAME%{%ORANGE%Breath of the Dying%NL%%TAN%Possible RWs:} // Eth, 6os
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=0 TABSK2>2 SPEAR !THROWING ZON]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // Superior, Eth, 0os
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=5 TABSK2>2 SPEAR !THROWING ZON]: %GRAY%%NAME%{%ORANGE%Eternity%NL%%TAN%Possible RWs:} // Superior, Eth, 5os
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=6 TABSK2>2 SPEAR !THROWING ZON]: %GRAY%%NAME%{%ORANGE%Breath of the Dying%NL%%TAN%Possible RWs:} // Superior, Eth, 6os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=0 SIN]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // 0os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=2 SIN]: %GRAY%%NAME%{%ORANGE%Strength%NL%%TAN%Possible RWs:} // 2os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=3 SIN]: %GRAY%%NAME%{%ORANGE%Pattern, Plague, Venom, Wind%NL%Chaos, Fury, Malice,%NL%%TAN%Possible RWs:} // 3os
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=0 SIN]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // Superior, 0os
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=2 SIN]: %GRAY%%NAME%{%ORANGE%Strength%NL%%TAN%Possible RWs:} // Superior, 2os
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=3 SIN]: %GRAY%%NAME%{%ORANGE%Pattern, Plague, Venom, Wind%NL%Chaos, Fury, Malice,%NL%%TAN%Possible RWs:} // Superior, 3os
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=0 SIN]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // Eth, 0os
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=3 SIN]: %GRAY%%NAME%{%ORANGE%Pattern, Plague, Venom, Wind%NL%Chaos, Fury, Malice,%NL%%TAN%Possible RWs:} // Eth, 3os
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=0 SIN]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // Superior, Eth, 0os
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=3 SIN]: %GRAY%%NAME%{%ORANGE%Pattern, Plague, Venom, Wind%NL%Chaos, Fury, Malice,%NL%%TAN%Possible RWs:} // Superior, Eth, 3os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=0 BAR]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=2 BAR]: %GRAY%%NAME%{%ORANGE%Lore, Nadir%NL%%TAN%Possible RWs:} // All tiers, 2os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=3 BAR]: %GRAY%%NAME%{%ORANGE%Delirium, Dream, Radiance%NL%%TAN%Possible RWs:} // All tiers, 3os
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=0 BAR]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=2 BAR]: %GRAY%%NAME%{%ORANGE%Lore, Nadir%NL%%TAN%Possible RWs:} // All tiers, 2os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=3 BAR]: %GRAY%%NAME%{%ORANGE%Delirium, Dream, Radiance%NL%%TAN%Possible RWs:} // All tiers, 3os, Superior
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=0 BAR]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=2 BAR]: %GRAY%%NAME%{%ORANGE%Lore, Nadir%NL%%TAN%Possible RWs:} // All tiers, 2os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=3 BAR]: %GRAY%%NAME%{%ORANGE%Delirium, Dream, Radiance%NL%%TAN%Possible RWs:} // All tiers, 3os, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=0 BAR]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=2 BAR]: %GRAY%%NAME%{%ORANGE%Lore, Nadir%NL%%TAN%Possible RWs:} // All tiers, 2os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=3 BAR]: %GRAY%%NAME%{%ORANGE%Delirium, Dream, Radiance%NL%%TAN%Possible RWs:} // All tiers, 3os, Superior, Eth
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=0 DRU]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=2 DRU]: %GRAY%%NAME%{%ORANGE%Lore, Nadir%NL%%TAN%Possible RWs:} // All tiers, 2os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=3 DRU]: %GRAY%%NAME%{%ORANGE%Delirium, Dream, Radiance%NL%%TAN%Possible RWs:} // All tiers, 3os
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=0 DRU]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=2 DRU]: %GRAY%%NAME%{%ORANGE%Lore, Nadir%NL%%TAN%Possible RWs:} // All tiers, 2os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=3 DRU]: %GRAY%%NAME%{%ORANGE%Delirium, Dream, Radiance%NL%%TAN%Possible RWs:} // All tiers, 3os, Superior
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=0 DRU]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=2 DRU]: %GRAY%%NAME%{%ORANGE%Lore, Nadir%NL%%TAN%Possible RWs:} // All tiers, 2os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=3 DRU]: %GRAY%%NAME%{%ORANGE%Delirium, Dream, Radiance%NL%%TAN%Possible RWs:} // All tiers, 3os, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=0 DRU]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=2 DRU]: %GRAY%%NAME%{%ORANGE%Lore, Nadir%NL%%TAN%Possible RWs:} // All tiers, 2os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=3 DRU]: %GRAY%%NAME%{%ORANGE%Delirium, Dream, Radiance%NL%%TAN%Possible RWs:} // All tiers, 3os, Superior, Eth
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=0 NEC]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=2 NEC]: %GRAY%%NAME%{%ORANGE%Rhyme, Splendor%NL%%TAN%Possible RWs:} // All tiers, 2os
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=0 NEC]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=2 NEC]: %GRAY%%NAME%{%ORANGE%Rhyme, Splendor%NL%%TAN%Possible RWs:} // All tiers, 2os, Superior
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=0 NEC]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=2 NEC]: %GRAY%%NAME%{%ORANGE%Rhyme, Splendor%NL%%TAN%Possible RWs:} // All tiers, 2os, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=0 NEC]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=2 NEC]: %GRAY%%NAME%{%ORANGE%Rhyme, Splendor%NL%%TAN%Possible RWs:} // All tiers, 2os, Superior, Eth
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=0 RES>34 DIN]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=2 RES>34 DIN]: %GRAY%%NAME%{%ORANGE%Rhyme, Splendor%NL%%TAN%Possible RWs:} // All tiers, 2os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=3 RES>34 DIN]: %GRAY%%NAME%{%ORANGE%Dream, Sanctuary%NL%Ancients Pledge, Dragon,%NL%%TAN%Possible RWs:} // All tiers, 3os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=4 RES>34 DIN]: %GRAY%%NAME%{%ORANGE%Exile, Phoenix, Spirit%NL%%TAN%Possible RWs:} // All tiers, 4os
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=0 RES>34 DIN]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=2 RES>34 DIN]: %GRAY%%NAME%{%ORANGE%Rhyme, Splendor%NL%%TAN%Possible RWs:} // All tiers, 2os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=3 RES>34 DIN]: %GRAY%%NAME%{%ORANGE%Dream, Sanctuary%NL%Ancients Pledge, Dragon,%NL%%TAN%Possible RWs:} // All tiers, 3os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=4 RES>34 DIN]: %GRAY%%NAME%{%ORANGE%Exile, Phoenix, Spirit%NL%%TAN%Possible RWs:} // All tiers, 4os, Superior
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=0 RES>34 DIN]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=2 RES>34 DIN]: %GRAY%%NAME%{%ORANGE%Rhyme, Splendor%NL%%TAN%Possible RWs:} // All tiers, 2os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=3 RES>34 DIN]: %GRAY%%NAME%{%ORANGE%Dream, Sanctuary%NL%Ancients Pledge, Dragon,%NL%%TAN%Possible RWs:} // All tiers, 3os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=4 RES>34 DIN]: %GRAY%%NAME%{%ORANGE%Exile, Phoenix, Spirit%NL%%TAN%Possible RWs:} // All tiers, 4os, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=0 RES>34 DIN]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=2 RES>34 DIN]: %GRAY%%NAME%{%ORANGE%Rhyme, Splendor%NL%%TAN%Possible RWs:} // All tiers, 2os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=3 RES>34 DIN]: %GRAY%%NAME%{%ORANGE%Dream, Sanctuary%NL%Ancients Pledge, Dragon,%NL%%TAN%Possible RWs:} // All tiers, 3os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=4 RES>34 DIN]: %GRAY%%NAME%{%ORANGE%Exile, Phoenix, Spirit%NL%%TAN%Possible RWs:} // All tiers, 4os, Superior, Eth
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=0 (ob5 OR oba OR obf) SORC]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=3 SORC]: %GRAY%%NAME%{%ORANGE%Plague, Venom%NL%%TAN%Possible RWs:} // All tiers, 3os
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=0 (ob5 OR oba OR obf) SORC]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=3 SORC]: %GRAY%%NAME%{%ORANGE%Plague, Venom%NL%%TAN%Possible RWs:} // All tiers, 3os, Superior
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=0 CHEST]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=2 CHEST]: %GRAY%%NAME%{%ORANGE%Prudence, Smoke, Stealth%NL%%TAN%Possible RWs:} // All tiers, 2os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=3 CHEST]: %GRAY%%NAME%{%ORANGE%Principle, Rain, Treach, Wealth%NL%Lionheart, Myth, Peace,%NL%Enlighten, Gloom,%NL%Bone, Dragon, Duress, Enigma,%NL%%TAN%Possible RWs:} // All tiers, 3os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=4 CHEST]: %GRAY%%NAME%{%ORANGE%Fortitude, Stone%NL%Bramble, Chains of Honor,%NL%%TAN%Possible RWs:} // All tiers, 4os
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=0 CHEST]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=2 CHEST]: %GRAY%%NAME%{%ORANGE%Prudence, Smoke, Stealth%NL%%TAN%Possible RWs:} // All tiers, 2os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=3 CHEST]: %GRAY%%NAME%{%ORANGE%Principle, Rain, Treach, Wealth%NL%Lionheart, Myth, Peace,%NL%Enlighten, Gloom,%NL%Bone, Dragon, Duress, Enigma,%NL%%TAN%Possible RWs:} // All tiers, 3os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=4 CHEST]: %GRAY%%NAME%{%ORANGE%Fortitude, Stone%NL%Bramble, Chains of Honor,%NL%%TAN%Possible RWs:} // All tiers, 4os, Superior
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=0 CHEST]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=2 CHEST]: %GRAY%%NAME%{%ORANGE%Prudence, Smoke, Stealth%NL%%TAN%Possible RWs:} // All tiers, 2os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=3 CHEST]: %GRAY%%NAME%{%ORANGE%Principle, Rain, Treach, Wealth%NL%Lionheart, Myth, Peace,%NL%Enlighten, Gloom,%NL%Bone, Dragon, Duress, Enigma,%NL%%TAN%Possible RWs:} // All tiers, 3os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=4 CHEST]: %GRAY%%NAME%{%ORANGE%Fortitude, Stone%NL%Bramble, Chains of Honor,%NL%%TAN%Possible RWs:} // All tiers, 4os, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=0 CHEST]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=2 CHEST]: %GRAY%%NAME%{%ORANGE%Prudence, Smoke, Stealth%NL%%TAN%Possible RWs:} // All tiers, 2os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=3 CHEST]: %GRAY%%NAME%{%ORANGE%Principle, Rain, Treach, Wealth%NL%Lionheart, Myth, Peace,%NL%Enlighten, Gloom,%NL%Bone, Dragon, Duress, Enigma,%NL%%TAN%Possible RWs:} // All tiers, 3os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=4 CHEST]: %GRAY%%NAME%{%ORANGE%Fortitude, Stone%NL%Bramble, Chains of Honor,%NL%%TAN%Possible RWs:} // All tiers, 4os, Superior, Eth
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=0 HELM]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=2 HELM]: %GRAY%%NAME%{%ORANGE%Lore, Nadir%NL%%TAN%Possible RWs:} // All tiers, 2os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=3 HELM]: %GRAY%%NAME%{%ORANGE%Delirium, Dream, Radiance%NL%%TAN%Possible RWs:} // All tiers, 3os
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=0 HELM]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=2 HELM]: %GRAY%%NAME%{%ORANGE%Lore, Nadir%NL%%TAN%Possible RWs:} // All tiers, 2os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=3 HELM]: %GRAY%%NAME%{%ORANGE%Delirium, Dream, Radiance%NL%%TAN%Possible RWs:} // All tiers, 3os, Superior
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=0 HELM]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=2 HELM]: %GRAY%%NAME%{%ORANGE%Lore, Nadir%NL%%TAN%Possible RWs:} // All tiers, 2os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=3 HELM]: %GRAY%%NAME%{%ORANGE%Delirium, Dream, Radiance%NL%%TAN%Possible RWs:} // All tiers, 3os, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=0 HELM]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=2 HELM]: %GRAY%%NAME%{%ORANGE%Lore, Nadir%NL%%TAN%Possible RWs:} // All tiers, 2os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=3 HELM]: %GRAY%%NAME%{%ORANGE%Delirium, Dream, Radiance%NL%%TAN%Possible RWs:} // All tiers, 3os, Superior, Eth
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=0 SHIELD]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=2 SHIELD]: %GRAY%%NAME%{%ORANGE%Rhyme, Splendor%NL%%TAN%Possible RWs:} // All tiers, 2os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=3 SHIELD]: %GRAY%%NAME%{%ORANGE%Dream, Sanctuary%NL%Ancients Pledge, Dragon,%NL%%TAN%Possible RWs:} // All tiers, 3os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=4 SHIELD]: %GRAY%%NAME%{%ORANGE%Phoenix, Spirit%NL%%TAN%Possible RWs:} // All tiers, 4os
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=0 SHIELD]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=2 SHIELD]: %GRAY%%NAME%{%ORANGE%Rhyme, Splendor%NL%%TAN%Possible RWs:} // All tiers, 2os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=3 SHIELD]: %GRAY%%NAME%{%ORANGE%Dream, Sanctuary%NL%Ancients Pledge, Dragon,%NL%%TAN%Possible RWs:} // All tiers, 3os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=4 SHIELD]: %GRAY%%NAME%{%ORANGE%Phoenix, Spirit%NL%%TAN%Possible RWs:} // All tiers, 4os, Superior
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=0 SHIELD]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=2 SHIELD]: %GRAY%%NAME%{%ORANGE%Rhyme, Splendor%NL%%TAN%Possible RWs:} // All tiers, 2os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=3 SHIELD]: %GRAY%%NAME%{%ORANGE%Dream, Sanctuary%NL%Ancients Pledge, Dragon,%NL%%TAN%Possible RWs:} // All tiers, 3os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=4 SHIELD]: %GRAY%%NAME%{%ORANGE%Phoenix, Spirit%NL%%TAN%Possible RWs:} // All tiers, 4os, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=0 SHIELD]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=2 SHIELD]: %GRAY%%NAME%{%ORANGE%Rhyme, Splendor%NL%%TAN%Possible RWs:} // All tiers, 2os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=3 SHIELD]: %GRAY%%NAME%{%ORANGE%Dream, Sanctuary%NL%Ancients Pledge, Dragon,%NL%%TAN%Possible RWs:} // All tiers, 3os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=4 SHIELD]: %GRAY%%NAME%{%ORANGE%Phoenix, Spirit%NL%%TAN%Possible RWs:} // All tiers, 4os, Superior, Eth
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=0 AXE !THROWING]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=2 AXE !THROWING]: %GRAY%%NAME%{%ORANGE%Steel, Strength%NL%%TAN%Possible RWs:} // All tiers, 2os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=3 AXE !THROWING]: %GRAY%%NAME%{%ORANGE%Malice, Plague, Venom, Wind%NL%Crescent Moon, Fury,%NL%%TAN%Possible RWs:} // All tiers, 3os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=4 AXE !THROWING]: %GRAY%%NAME%{%ORANGE%Kingslayer, Oath, Passion, Phoenix%NL%Famine, Fortitude, Hand of Justice,%NL%%TAN%Possible RWs:} // All tiers, 4os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=5 AXE !THROWING]: %GRAY%%NAME%{%ORANGE%Doom, Eternity, Grief, Honor%NL%Beast, Call to Arms, Death,%NL%%TAN%Possible RWs:} // All tiers, 5os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=6 AXE !THROWING]: %GRAY%%NAME%{%ORANGE%Last Wish, Silence%NL%Breath of the Dying,%NL%%TAN%Possible RWs:} // All tiers, 6os
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=0 AXE !THROWING]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=2 AXE !THROWING]: %GRAY%%NAME%{%ORANGE%Steel, Strength%NL%%TAN%Possible RWs:} // All tiers, 2os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=3 AXE !THROWING]: %GRAY%%NAME%{%ORANGE%Malice, Plague, Venom, Wind%NL%Crescent Moon, Fury,%NL%%TAN%Possible RWs:} // All tiers, 3os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=4 AXE !THROWING]: %GRAY%%NAME%{%ORANGE%Kingslayer, Oath, Passion, Phoenix%NL%Famine, Fortitude, Hand of Justice,%NL%%TAN%Possible RWs:} // All tiers, 4os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=5 AXE !THROWING]: %GRAY%%NAME%{%ORANGE%Doom, Eternity, Grief, Honor%NL%Beast, Call to Arms, Death,%NL%%TAN%Possible RWs:} // All tiers, 5os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=6 AXE !THROWING]: %GRAY%%NAME%{%ORANGE%Last Wish, Silence%NL%Breath of the Dying,%NL%%TAN%Possible RWs:} // All tiers, 6os, Superior
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=0 AXE !THROWING]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=2 AXE !THROWING]: %GRAY%%NAME%{%ORANGE%Steel, Strength%NL%%TAN%Possible RWs:} // All tiers, 2os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=3 AXE !THROWING]: %GRAY%%NAME%{%ORANGE%Malice, Plague, Venom, Wind%NL%Crescent Moon, Fury,%NL%%TAN%Possible RWs:} // All tiers, 3os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=4 AXE !THROWING]: %GRAY%%NAME%{%ORANGE%Kingslayer, Oath, Passion, Phoenix%NL%Famine, Fortitude, Hand of Justice,%NL%%TAN%Possible RWs:} // All tiers, 4os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=5 AXE !THROWING]: %GRAY%%NAME%{%ORANGE%Doom, Eternity, Grief, Honor%NL%Beast, Call to Arms, Death,%NL%%TAN%Possible RWs:} // All tiers, 5os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=6 AXE !THROWING]: %GRAY%%NAME%{%ORANGE%Last Wish, Silence%NL%Breath of the Dying,%NL%%TAN%Possible RWs:} // All tiers, 6os, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=0 AXE !THROWING]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=2 AXE !THROWING]: %GRAY%%NAME%{%ORANGE%Steel, Strength%NL%%TAN%Possible RWs:} // All tiers, 2os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=3 AXE !THROWING]: %GRAY%%NAME%{%ORANGE%Malice, Plague, Venom, Wind%NL%Crescent Moon, Fury,%NL%%TAN%Possible RWs:} // All tiers, 3os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=4 AXE !THROWING]: %GRAY%%NAME%{%ORANGE%Kingslayer, Oath, Passion, Phoenix%NL%Famine, Fortitude, Hand of Justice,%NL%%TAN%Possible RWs:} // All tiers, 4os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=5 AXE !THROWING]: %GRAY%%NAME%{%ORANGE%Doom, Eternity, Grief, Honor%NL%Beast, Call to Arms, Death,%NL%%TAN%Possible RWs:} // All tiers, 5os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=6 AXE !THROWING]: %GRAY%%NAME%{%ORANGE%Last Wish, Silence%NL%Breath of the Dying,%NL%%TAN%Possible RWs:} // All tiers, 6os, Superior, Eth
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=0 BOW]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=2 BOW]: %GRAY%%NAME%{%ORANGE%Zephyr%NL%%TAN%Possible RWs:} // All tiers, 2os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=3 BOW]: %GRAY%%NAME%{%ORANGE%Plague, Venom%NL%Edge, Melody,%NL%%TAN%Possible RWs:} // All tiers, 3os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=4 BOW]: %GRAY%%NAME%{%ORANGE%Ice, Passion, Phoenix, Wrath%NL%Harmony, Hand of Justice,%NL%Brand, Faith, Fortitude,%NL%%TAN%Possible RWs:} // All tiers, 4os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=5 BOW]: %GRAY%%NAME%{%ORANGE%Call to Arms%NL%%TAN%Possible RWs:} // All tiers, 5os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=6 BOW]: %GRAY%%NAME%{%ORANGE%Breath of the Dying, Silence%NL%%TAN%Possible RWs:} // All tiers, 6os
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=0 BOW]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=2 BOW]: %GRAY%%NAME%{%ORANGE%Zephyr%NL%%TAN%Possible RWs:} // All tiers, 2os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=3 BOW]: %GRAY%%NAME%{%ORANGE%Plague, Venom%NL%Edge, Melody,%NL%%TAN%Possible RWs:} // All tiers, 3os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=4 BOW]: %GRAY%%NAME%{%ORANGE%Ice, Passion, Phoenix, Wrath%NL%Harmony, Hand of Justice,%NL%Brand, Faith, Fortitude,%NL%%TAN%Possible RWs:} // All tiers, 4os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=5 BOW]: %GRAY%%NAME%{%ORANGE%Call to Arms%NL%%TAN%Possible RWs:} // All tiers, 5os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=6 BOW]: %GRAY%%NAME%{%ORANGE%Breath of the Dying, Silence%NL%%TAN%Possible RWs:} // All tiers, 6os, Superior
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=0 XBOW]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=2 XBOW]: %GRAY%%NAME%{%ORANGE%Zephyr%NL%%TAN%Possible RWs:} // All tiers, 2os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=3 XBOW]: %GRAY%%NAME%{%ORANGE%Plague, Venom%NL%Edge, Melody,%NL%%TAN%Possible RWs:} // All tiers, 3os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=4 XBOW]: %GRAY%%NAME%{%ORANGE%Ice, Passion, Phoenix, Wrath%NL%Harmony, Hand of Justice,%NL%Brand, Faith, Fortitude,%NL%%TAN%Possible RWs:} // All tiers, 4os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=5 XBOW]: %GRAY%%NAME%{%ORANGE%Call to Arms%NL%%TAN%Possible RWs:} // All tiers, 5os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=6 XBOW]: %GRAY%%NAME%{%ORANGE%Breath of the Dying, Silence%NL%%TAN%Possible RWs:} // All tiers, 6os
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=0 XBOW]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=2 XBOW]: %GRAY%%NAME%{%ORANGE%Zephyr%NL%%TAN%Possible RWs:} // All tiers, 2os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=3 XBOW]: %GRAY%%NAME%{%ORANGE%Plague, Venom%NL%Edge, Melody,%NL%%TAN%Possible RWs:} // All tiers, 3os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=4 XBOW]: %GRAY%%NAME%{%ORANGE%Ice, Passion, Phoenix, Wrath%NL%Harmony, Hand of Justice,%NL%Brand, Faith, Fortitude,%NL%%TAN%Possible RWs:} // All tiers, 4os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=5 XBOW]: %GRAY%%NAME%{%ORANGE%Call to Arms%NL%%TAN%Possible RWs:} // All tiers, 5os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=6 XBOW]: %GRAY%%NAME%{%ORANGE%Breath of the Dying, Silence%NL%%TAN%Possible RWs:} // All tiers, 6os, Superior
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=0 DAGGER !THROWING]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=2 DAGGER !THROWING]: %GRAY%%NAME%{%ORANGE%Strength%NL%%TAN%Possible RWs:} // All tiers, 2os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=3 DAGGER !THROWING]: %GRAY%%NAME%{%ORANGE%Plague, Venom, Wind%NL%Fury, Malice,%NL%%TAN%Possible RWs:} // All tiers, 3os
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=0 DAGGER !THROWING]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=2 DAGGER !THROWING]: %GRAY%%NAME%{%ORANGE%Strength%NL%%TAN%Possible RWs:} // All tiers, 2os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=3 DAGGER !THROWING]: %GRAY%%NAME%{%ORANGE%Plague, Venom, Wind%NL%Fury, Malice,%NL%%TAN%Possible RWs:} // All tiers, 3os, Superior
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=0 DAGGER !THROWING]: %GRAY%%NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=2 DAGGER !THROWING]: %GRAY%%NAME%{%ORANGE%Strength%NL%%TAN%Possible RWs:} // All tiers, 2os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=3 DAGGER !THROWING]: %GRAY%%NAME%{%ORANGE%Plague, Venom, Wind%NL%Fury, Malice,%NL%%TAN%Possible RWs:} // All tiers, 3os, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=0 DAGGER !THROWING]: %GRAY%%NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=2 DAGGER !THROWING]: %GRAY%%NAME%{%ORANGE%Strength%NL%%TAN%Possible RWs:} // All tiers, 2os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=3 DAGGER !THROWING]: %GRAY%%NAME%{%ORANGE%Plague, Venom, Wind%NL%Fury, Malice,%NL%%TAN%Possible RWs:} // All tiers, 3os, Superior, Eth
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=0 (clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp)]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=2 (clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp)]: %GRAY%%NAME%{%ORANGE%Strength%NL%%TAN%Possible RWs:} // All tiers, 2os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=3 (9sp OR 7sp)]: %GRAY%%NAME%{%ORANGE%Plague, Venom, Wind%NL%Black, Fury, Malice,%NL%%TAN%Possible RWs:} // All tiers, 3os
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=0 (clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp)]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=2 (clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp)]: %GRAY%%NAME%{%ORANGE%Strength%NL%%TAN%Possible RWs:} // All tiers, 2os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=3 (9sp OR 7sp)]: %GRAY%%NAME%{%ORANGE%Plague, Venom, Wind%NL%Black, Fury, Malice,%NL%%TAN%Possible RWs:} // All tiers, 3os, Superior
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=0 (whm OR 9wh OR 7wh OR mau OR 9m9 OR 7m7 OR gma OR 9gm OR 7gm)]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=2 (whm OR 9wh OR 7wh OR mau OR 9m9 OR 7m7 OR gma OR 9gm OR 7gm)]: %GRAY%%NAME%{%ORANGE%Strength%NL%%TAN%Possible RWs:} // All tiers, 2os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=3 (whm OR 9wh OR 7wh OR mau OR 9m9 OR 7m7 OR gma OR 9gm OR 7gm)]: %GRAY%%NAME%{%ORANGE%Malice, Plague, Venom, Wind%NL%Black, Fury, Lawbringer,%NL%%TAN%Possible RWs:} // All tiers, 3os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=4 (whm OR 9wh OR 7wh OR mau OR 9m9 OR 7m7 OR gma OR 9gm OR 7gm)]: %GRAY%%NAME%{%ORANGE%Passion, Phoenix%NL%Hand of Justice,%NL%Famine, Fortitude,%NL%%TAN%Possible RWs:} // All tiers, 4os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=5 (mau OR 9m9 OR 7m7 OR gma OR 9gm OR 7gm)]: %GRAY%%NAME%{%ORANGE%Doom, Eternity, Honor%NL%Beast, Call to Arms,%NL%%TAN%Possible RWs:} // All tiers, 5os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=6 (mau OR 9m9 OR 7m7 OR gma OR 9gm OR 7gm)]: %GRAY%%NAME%{%ORANGE%Last Wish, Silence%NL%Breath of the Dying,%NL%%TAN%Possible RWs:} // All tiers, 6os
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=0 (whm OR 9wh OR 7wh OR mau OR 9m9 OR 7m7 OR gma OR 9gm OR 7gm)]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=2 (whm OR 9wh OR 7wh OR mau OR 9m9 OR 7m7 OR gma OR 9gm OR 7gm)]: %GRAY%%NAME%{%ORANGE%Strength%NL%%TAN%Possible RWs:} // All tiers, 2os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=3 (whm OR 9wh OR 7wh OR mau OR 9m9 OR 7m7 OR gma OR 9gm OR 7gm)]: %GRAY%%NAME%{%ORANGE%Malice, Plague, Venom, Wind%NL%Black, Fury, Lawbringer,%NL%%TAN%Possible RWs:} // All tiers, 3os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=4 (whm OR 9wh OR 7wh OR mau OR 9m9 OR 7m7 OR gma OR 9gm OR 7gm)]: %GRAY%%NAME%{%ORANGE%Passion, Phoenix%NL%Hand of Justice,%NL%Famine, Fortitude,%NL%%TAN%Possible RWs:} // All tiers, 4os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=5 (mau OR 9m9 OR 7m7 OR gma OR 9gm OR 7gm)]: %GRAY%%NAME%{%ORANGE%Doom, Eternity, Honor%NL%Beast, Call to Arms,%NL%%TAN%Possible RWs:} // All tiers, 5os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=6 (mau OR 9m9 OR 7m7 OR gma OR 9gm OR 7gm)]: %GRAY%%NAME%{%ORANGE%Last Wish, Silence%NL%Breath of the Dying,%NL%%TAN%Possible RWs:} // All tiers, 6os, Superior
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=0 (mau OR 9m9 OR 7m7 OR gma OR 9gm OR 7gm)]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=2 (whm OR 9wh OR 7wh OR mau OR 9m9 OR 7m7 OR gma OR 9gm OR 7gm)]: %GRAY%%NAME%{%ORANGE%Strength%NL%%TAN%Possible RWs:} // All tiers, 2os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=3 (whm OR 9wh OR 7wh OR mau OR 9m9 OR 7m7 OR gma OR 9gm OR 7gm)]: %GRAY%%NAME%{%ORANGE%Malice, Plague, Venom, Wind%NL%Black, Fury, Lawbringer,%NL%%TAN%Possible RWs:} // All tiers, 3os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=4 (whm OR 9wh OR 7wh OR mau OR 9m9 OR 7m7 OR gma OR 9gm OR 7gm)]: %GRAY%%NAME%{%ORANGE%Passion, Phoenix%NL%Hand of Justice,%NL%Famine, Fortitude,%NL%%TAN%Possible RWs:} // All tiers, 4os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=5 (mau OR 9m9 OR 7m7 OR gma OR 9gm OR 7gm)]: %GRAY%%NAME%{%ORANGE%Doom, Eternity, Honor%NL%Beast, Call to Arms,%NL%%TAN%Possible RWs:} // All tiers, 5os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=6 (mau OR 9m9 OR 7m7 OR gma OR 9gm OR 7gm)]: %GRAY%%NAME%{%ORANGE%Last Wish, Silence%NL%Breath of the Dying,%NL%%TAN%Possible RWs:} // All tiers, 6os, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=0 (mau OR 9m9 OR 7m7 OR gma OR 9gm OR 7gm)]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=2 (whm OR 9wh OR 7wh OR mau OR 9m9 OR 7m7 OR gma OR 9gm OR 7gm)]: %GRAY%%NAME%{%ORANGE%Strength%NL%%TAN%Possible RWs:} // All tiers, 2os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=3 (whm OR 9wh OR 7wh OR mau OR 9m9 OR 7m7 OR gma OR 9gm OR 7gm)]: %GRAY%%NAME%{%ORANGE%Malice, Plague, Venom, Wind%NL%Black, Fury, Lawbringer,%NL%%TAN%Possible RWs:} // All tiers, 3os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=4 (whm OR 9wh OR 7wh OR mau OR 9m9 OR 7m7 OR gma OR 9gm OR 7gm)]: %GRAY%%NAME%{%ORANGE%Passion, Phoenix%NL%Hand of Justice,%NL%Famine, Fortitude,%NL%%TAN%Possible RWs:} // All tiers, 4os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=5 (mau OR 9m9 OR 7m7 OR gma OR 9gm OR 7gm)]: %GRAY%%NAME%{%ORANGE%Doom, Eternity, Honor%NL%Beast, Call to Arms,%NL%%TAN%Possible RWs:} // All tiers, 5os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=6 (mau OR 9m9 OR 7m7 OR gma OR 9gm OR 7gm)]: %GRAY%%NAME%{%ORANGE%Last Wish, Silence%NL%Breath of the Dying,%NL%%TAN%Possible RWs:} // All tiers, 6os, Superior, Eth
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=0 (mac OR 9ma OR 7ma OR mst OR 9mt OR 7mt OR fla OR 9fl OR 7fl)]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=2 (mac OR 9ma OR 7ma OR mst OR 9mt OR 7mt OR fla OR 9fl OR 7fl)]: %GRAY%%NAME%{%ORANGE%Steel, Strength%NL%%TAN%Possible RWs:} // All tiers, 2os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=3 (mst OR 9mt OR 7mt OR fla OR 9fl OR 7fl)]: %GRAY%%NAME%{%ORANGE%Plague, Venom, Wind%NL%Black, Fury, Malice,%NL%%TAN%Possible RWs:} // All tiers, 3os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=4 (fla OR 9fl OR 7fl)]: %GRAY%%NAME%{%ORANGE%Phoenix, Oath, Voice of Reason%NL%Heart of the Oak, Passion,%NL%Fortitude, Hand of Justice,%NL%%TAN%Possible RWs:} // All tiers, 4os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=5 (fla OR 9fl OR 7fl)]: %GRAY%%NAME%{%ORANGE%Call to Arms, Eternity, Honor%NL%%TAN%Possible RWs:} // All tiers, 5os
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=0 (mac OR 9ma OR 7ma OR mst OR 9mt OR 7mt OR fla OR 9fl OR 7fl)]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=2 (mac OR 9ma OR 7ma OR mst OR 9mt OR 7mt OR fla OR 9fl OR 7fl)]: %GRAY%%NAME%{%ORANGE%Steel, Strength%NL%%TAN%Possible RWs:} // All tiers, 2os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=3 (mst OR 9mt OR 7mt OR fla OR 9fl OR 7fl)]: %GRAY%%NAME%{%ORANGE%Plague, Venom, Wind%NL%Black, Fury, Malice,%NL%%TAN%Possible RWs:} // All tiers, 3os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=4 (fla OR 9fl OR 7fl)]: %GRAY%%NAME%{%ORANGE%Phoenix, Oath, Voice of Reason%NL%Heart of the Oak, Passion,%NL%Fortitude, Hand of Justice,%NL%%TAN%Possible RWs:} // All tiers, 4os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=5 (fla OR 9fl OR 7fl)]: %GRAY%%NAME%{%ORANGE%Call to Arms, Eternity, Honor%NL%%TAN%Possible RWs:} // All tiers, 5os, Superior
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=0 (mac OR 9ma OR 7ma OR mst OR 9mt OR 7mt OR fla OR 9fl OR 7fl)]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=2 (mac OR 9ma OR 7ma OR mst OR 9mt OR 7mt OR fla OR 9fl OR 7fl)]: %GRAY%%NAME%{%ORANGE%Steel, Strength%NL%%TAN%Possible RWs:} // All tiers, 2os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=3 (mst OR 9mt OR 7mt OR fla OR 9fl OR 7fl)]: %GRAY%%NAME%{%ORANGE%Plague, Venom, Wind%NL%Black, Fury, Malice,%NL%%TAN%Possible RWs:} // All tiers, 3os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=4 (fla OR 9fl OR 7fl)]: %GRAY%%NAME%{%ORANGE%Phoenix, Oath, Voice of Reason%NL%Heart of the Oak, Passion,%NL%Fortitude, Hand of Justice,%NL%%TAN%Possible RWs:} // All tiers, 4os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=5 (fla OR 9fl OR 7fl)]: %GRAY%%NAME%{%ORANGE%Call to Arms, Eternity, Honor%NL%%TAN%Possible RWs:} // All tiers, 5os, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=0 (mac OR 9ma OR 7ma OR mst OR 9mt OR 7mt OR fla OR 9fl OR 7fl)]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=2 (mac OR 9ma OR 7ma OR mst OR 9mt OR 7mt OR fla OR 9fl OR 7fl)]: %GRAY%%NAME%{%ORANGE%Steel, Strength%NL%%TAN%Possible RWs:} // All tiers, 2os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=3 (mst OR 9mt OR 7mt OR fla OR 9fl OR 7fl)]: %GRAY%%NAME%{%ORANGE%Plague, Venom, Wind%NL%Black, Fury, Malice,%NL%%TAN%Possible RWs:} // All tiers, 3os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=4 (fla OR 9fl OR 7fl)]: %GRAY%%NAME%{%ORANGE%Phoenix, Oath, Voice of Reason%NL%Heart of the Oak, Passion,%NL%Fortitude, Hand of Justice,%NL%%TAN%Possible RWs:} // All tiers, 4os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=5 (fla OR 9fl OR 7fl)]: %GRAY%%NAME%{%ORANGE%Call to Arms, Eternity, Honor%NL%%TAN%Possible RWs:} // All tiers, 5os, Superior, Eth
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=3 POLEARM]: %GRAY%%NAME%{%ORANGE%Malice, Plague, Venom, Wind%NL%Crescent Moon, Fury%NL%%TAN%Possible RWs:} // All tiers, 3os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=4 POLEARM]: %GRAY%%NAME%{%ORANGE%Phoenix, Pride, Rift%NL%Infinity, Insight, Passion,%NL%Fortitude, Hand of Justice,%NL%%TAN%Possible RWs:} // All tiers, 4os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=5 POLEARM]: %GRAY%%NAME%{%ORANGE%Eternity, Honor, Obedience%NL%Call to Arms, Destruction, Doom,%NL%%TAN%Possible RWs:} // All tiers, 5os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=6 POLEARM]: %GRAY%%NAME%{%ORANGE%Breath of the Dying, Silence%NL%%TAN%Possible RWs:} // All tiers, 6os
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=0 POLEARM]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=2 POLEARM]: %GRAY%%NAME%{%ORANGE%Strength%NL%%TAN%Possible RWs:} // All tiers, 2os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=3 POLEARM]: %GRAY%%NAME%{%ORANGE%Malice, Plague, Venom, Wind%NL%Crescent Moon, Fury%NL%%TAN%Possible RWs:} // All tiers, 3os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=4 POLEARM]: %GRAY%%NAME%{%ORANGE%Phoenix, Pride, Rift%NL%Infinity, Insight, Passion,%NL%Fortitude, Hand of Justice,%NL%%TAN%Possible RWs:} // All tiers, 4os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=5 POLEARM]: %GRAY%%NAME%{%ORANGE%Eternity, Honor, Obedience%NL%Call to Arms, Destruction, Doom,%NL%%TAN%Possible RWs:} // All tiers, 5os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=6 POLEARM]: %GRAY%%NAME%{%ORANGE%Breath of the Dying, Silence%NL%%TAN%Possible RWs:} // All tiers, 6os, Superior
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=0 POLEARM]: %GRAY%%NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=2 POLEARM]: %GRAY%%NAME%{%ORANGE%Strength%NL%%TAN%Possible RWs:} // All tiers, 2os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=3 POLEARM]: %GRAY%%NAME%{%ORANGE%Malice, Plague, Venom, Wind%NL%Crescent Moon, Fury%NL%%TAN%Possible RWs:} // All tiers, 3os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=4 POLEARM]: %GRAY%%NAME%{%ORANGE%Phoenix, Pride, Rift%NL%Infinity, Insight, Passion,%NL%Fortitude, Hand of Justice,%NL%%TAN%Possible RWs:} // All tiers, 4os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=5 POLEARM]: %GRAY%%NAME%{%ORANGE%Eternity, Honor, Obedience%NL%Call to Arms, Destruction, Doom,%NL%%TAN%Possible RWs:} // All tiers, 5os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=6 POLEARM]: %GRAY%%NAME%{%ORANGE%Breath of the Dying, Silence%NL%%TAN%Possible RWs:} // All tiers, 6os, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=0 POLEARM]: %GRAY%%NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=2 POLEARM]: %GRAY%%NAME%{%ORANGE%Strength%NL%%TAN%Possible RWs:} // All tiers, 2os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=3 POLEARM]: %GRAY%%NAME%{%ORANGE%Malice, Plague, Venom, Wind%NL%Crescent Moon, Fury%NL%%TAN%Possible RWs:} // All tiers, 3os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=4 POLEARM]: %GRAY%%NAME%{%ORANGE%Phoenix, Pride, Rift%NL%Infinity, Insight, Passion,%NL%Fortitude, Hand of Justice,%NL%%TAN%Possible RWs:} // All tiers, 4os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=5 POLEARM]: %GRAY%%NAME%{%ORANGE%Eternity, Honor, Obedience%NL%Call to Arms, Destruction, Doom,%NL%%TAN%Possible RWs:} // All tiers, 5os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=6 POLEARM]: %GRAY%%NAME%{%ORANGE%Breath of the Dying, Silence%NL%%TAN%Possible RWs:} // All tiers, 6os, Superior, Eth
+ItemDisplay[NMAG !INF !RW !ETH SOCK=5 wsp SCEPTER]: %GRAY%%NAME%%DOT-1E%{%ORANGE%Eternity, Honor%NL%Beast, Call to Arms,%NL%%TAN%Possible RWs:} // All War Scepters, 5os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=0 SCEPTER]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=2 SCEPTER]: %GRAY%%NAME%{%ORANGE%Strength%NL%%TAN%Possible RWs:} // All tiers, 2os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=3 SCEPTER]: %GRAY%%NAME%{%ORANGE%Malice, Plague, Venom, Wind%NL%Fury, Kings Grace, Lawbringer,%NL%%TAN%Possible RWs:} // All tiers, 3os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=4 SCEPTER]: %GRAY%%NAME%{%ORANGE%Passion, Phoenix, Rift%NL%Hand of Justice,%NL%Fortitude, Holy Thunder,%NL%%TAN%Possible RWs:} // All tiers, 4os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=5 SCEPTER]: %GRAY%%NAME%{%ORANGE%Eternity, Honor%NL%Beast, Call to Arms,%NL%%TAN%Possible RWs:} // All tiers, 5os
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=0 SCEPTER]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=2 SCEPTER]: %GRAY%%NAME%{%ORANGE%Strength%NL%%TAN%Possible RWs:} // All tiers, 2os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=3 SCEPTER]: %GRAY%%NAME%{%ORANGE%Malice, Plague, Venom, Wind%NL%Fury, Kings Grace, Lawbringer,%NL%%TAN%Possible RWs:} // All tiers, 3os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=4 SCEPTER]: %GRAY%%NAME%{%ORANGE%Passion, Phoenix, Rift%NL%Hand of Justice,%NL%Fortitude, Holy Thunder,%NL%%TAN%Possible RWs:} // All tiers, 4os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=5 SCEPTER]: %GRAY%%NAME%{%ORANGE%Eternity, Honor%NL%Beast, Call to Arms,%NL%%TAN%Possible RWs:} // All tiers, 5os, Superior
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=0 SCEPTER]: %GRAY%%NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=2 SCEPTER]: %GRAY%%NAME%{%ORANGE%Strength%NL%%TAN%Possible RWs:} // All tiers, 2os, Superior
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=3 SCEPTER]: %GRAY%%NAME%{%ORANGE%Malice, Plague, Venom, Wind%NL%Fury, Kings Grace, Lawbringer,%NL%%TAN%Possible RWs:} // All tiers, 3os, Superior
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=4 SCEPTER]: %GRAY%%NAME%{%ORANGE%Passion, Phoenix, Rift%NL%Hand of Justice,%NL%Fortitude, Holy Thunder,%NL%%TAN%Possible RWs:} // All tiers, 4os, Superior
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=5 SCEPTER]: %GRAY%%NAME%{%ORANGE%Eternity, Honor%NL%Beast, Call to Arms,%NL%%TAN%Possible RWs:} // All tiers, 5os, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=0 SCEPTER]: %GRAY%%NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=2 SCEPTER]: %GRAY%%NAME%{%ORANGE%Strength%NL%%TAN%Possible RWs:} // All tiers, 2os, Superior
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=3 SCEPTER]: %GRAY%%NAME%{%ORANGE%Malice, Plague, Venom, Wind%NL%Fury, Kings Grace, Lawbringer,%NL%%TAN%Possible RWs:} // All tiers, 3os, Superior
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=4 SCEPTER]: %GRAY%%NAME%{%ORANGE%Passion, Phoenix, Rift%NL%Hand of Justice,%NL%Fortitude, Holy Thunder,%NL%%TAN%Possible RWs:} // All tiers, 4os, Superior
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=5 SCEPTER]: %GRAY%%NAME%{%ORANGE%Eternity, Honor%NL%Beast, Call to Arms,%NL%%TAN%Possible RWs:} // All tiers, 5os, Superior, Eth
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=0 SPEAR !THROWING !ZON]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=2 SPEAR !THROWING !ZON]: %GRAY%%NAME%{%ORANGE%Strength%NL%%TAN%Possible RWs:} // All tiers, 2os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=3 SPEAR !THROWING !ZON]: %GRAY%%NAME%{%ORANGE%Malice, Plague, Venom, Wind%NL%Crescent Moon, Fury%NL%%TAN%Possible RWs:} // All tiers, 3os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=4 SPEAR !THROWING !ZON]: %GRAY%%NAME%{%ORANGE%Phoenix, Pride, Rift%NL%Infinity, Insight, Passion,%NL%Fortitude, Hand of Justice,%NL%%TAN%Possible RWs:} // All tiers, 4os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=5 SPEAR !THROWING !ZON]: %GRAY%%NAME%{%ORANGE%Eternity, Honor, Obedience%NL%Call to Arms, Destruction, Doom,%NL%%TAN%Possible RWs:} // All tiers, 5os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=6 SPEAR !THROWING !ZON]: %GRAY%%NAME%{%ORANGE%Breath of the Dying, Silence%NL%%TAN%Possible RWs:} // All tiers, 6os
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=0 SPEAR !THROWING !ZON]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=2 SPEAR !THROWING !ZON]: %GRAY%%NAME%{%ORANGE%Strength%NL%%TAN%Possible RWs:} // All tiers, 2os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=3 SPEAR !THROWING !ZON]: %GRAY%%NAME%{%ORANGE%Malice, Plague, Venom, Wind%NL%Crescent Moon, Fury%NL%%TAN%Possible RWs:} // All tiers, 3os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=4 SPEAR !THROWING !ZON]: %GRAY%%NAME%{%ORANGE%Phoenix, Pride, Rift%NL%Infinity, Insight, Passion,%NL%Fortitude, Hand of Justice,%NL%%TAN%Possible RWs:} // All tiers, 4os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=5 SPEAR !THROWING !ZON]: %GRAY%%NAME%{%ORANGE%Eternity, Honor, Obedience%NL%Call to Arms, Destruction, Doom,%NL%%TAN%Possible RWs:} // All tiers, 5os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=6 SPEAR !THROWING !ZON]: %GRAY%%NAME%{%ORANGE%Breath of the Dying, Silence%NL%%TAN%Possible RWs:} // All tiers, 6os, Superior
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=0 SPEAR !THROWING !ZON]: %GRAY%%NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=2 SPEAR !THROWING !ZON]: %GRAY%%NAME%{%ORANGE%Strength%NL%%TAN%Possible RWs:} // All tiers, 2os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=3 SPEAR !THROWING !ZON]: %GRAY%%NAME%{%ORANGE%Malice, Plague, Venom, Wind%NL%Crescent Moon, Fury%NL%%TAN%Possible RWs:} // All tiers, 3os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=4 SPEAR !THROWING !ZON]: %GRAY%%NAME%{%ORANGE%Phoenix, Pride, Rift%NL%Infinity, Insight, Passion,%NL%Fortitude, Hand of Justice,%NL%%TAN%Possible RWs:} // All tiers, 4os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=5 SPEAR !THROWING !ZON]: %GRAY%%NAME%{%ORANGE%Eternity, Honor, Obedience%NL%Call to Arms, Destruction, Doom,%NL%%TAN%Possible RWs:} // All tiers, 5os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=6 SPEAR !THROWING !ZON]: %GRAY%%NAME%{%ORANGE%Breath of the Dying, Silence%NL%%TAN%Possible RWs:} // All tiers, 6os, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=0 SPEAR !THROWING !ZON]: %GRAY%%NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=2 SPEAR !THROWING !ZON]: %GRAY%%NAME%{%ORANGE%Strength%NL%%TAN%Possible RWs:} // All tiers, 2os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=3 SPEAR !THROWING !ZON]: %GRAY%%NAME%{%ORANGE%Malice, Plague, Venom, Wind%NL%Crescent Moon, Fury%NL%%TAN%Possible RWs:} // All tiers, 3os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=4 SPEAR !THROWING !ZON]: %GRAY%%NAME%{%ORANGE%Phoenix, Pride, Rift%NL%Infinity, Insight, Passion,%NL%Fortitude, Hand of Justice,%NL%%TAN%Possible RWs:} // All tiers, 4os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=5 SPEAR !THROWING !ZON]: %GRAY%%NAME%{%ORANGE%Eternity, Honor, Obedience%NL%Call to Arms, Destruction, Doom,%NL%%TAN%Possible RWs:} // All tiers, 5os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=6 SPEAR !THROWING !ZON]: %GRAY%%NAME%{%ORANGE%Breath of the Dying, Silence%NL%%TAN%Possible RWs:} // All tiers, 6os, Superior, Eth
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=0 STAFF]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=2 STAFF]: %GRAY%%NAME%{%ORANGE%Leaf, Strength%NL%%TAN%Possible RWs:} // All tiers, 2os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=3 STAFF]: %GRAY%%NAME%{%ORANGE%Plague, Venom, Wind%NL%Fury, Malice%NL%%TAN%Possible RWs:} // All tiers, 3os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=4 STAFF]: %GRAY%%NAME%{%ORANGE%Memory, Passion, Phoenix%NL%Heart of the Oak, Insight,%NL%Fortitude, Hand of Justice,%NL%%TAN%Possible RWs:} // All tiers, 4os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=5 STAFF]: %GRAY%%NAME%{%ORANGE%Call to Arms, Eternity, Honor%NL%%TAN%Possible RWs:} // All tiers, 5os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=6 STAFF]: %GRAY%%NAME%{%ORANGE%Breath of the Dying, Silence%NL%%TAN%Possible RWs:} // All tiers, 6os
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=0 STAFF]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=2 STAFF]: %GRAY%%NAME%{%ORANGE%Leaf, Strength%NL%%TAN%Possible RWs:} // All tiers, 2os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=3 STAFF]: %GRAY%%NAME%{%ORANGE%Plague, Venom, Wind%NL%Fury, Malice%NL%%TAN%Possible RWs:} // All tiers, 3os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=4 STAFF]: %GRAY%%NAME%{%ORANGE%Memory, Passion, Phoenix%NL%Heart of the Oak, Insight,%NL%Fortitude, Hand of Justice,%NL%%TAN%Possible RWs:} // All tiers, 4os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=5 STAFF]: %GRAY%%NAME%{%ORANGE%Call to Arms, Eternity, Honor%NL%%TAN%Possible RWs:} // All tiers, 5os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=6 STAFF]: %GRAY%%NAME%{%ORANGE%Breath of the Dying, Silence%NL%%TAN%Possible RWs:} // All tiers, 6os, Superior
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=0 STAFF]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=5 STAFF]: %GRAY%%NAME%{%ORANGE%Eternity%NL%%TAN%Possible RWs:} // All tiers, 5os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=6 STAFF]: %GRAY%%NAME%{%ORANGE%Breath of the Dying%NL%%TAN%Possible RWs:} // All tiers, 6os, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=0 STAFF]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=5 STAFF]: %GRAY%%NAME%{%ORANGE%Eternity%NL%%TAN%Possible RWs:} // All tiers, 5os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=6 STAFF]: %GRAY%%NAME%{%ORANGE%Breath of the Dying%NL%%TAN%Possible RWs:} // All tiers, 6os, Superior, Eth
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=0 SWORD]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=2 SWORD]: %GRAY%%NAME%{%ORANGE%Steel, Strength%NL%%TAN%Possible RWs:} // All tiers, 2os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=3 SWORD]: %GRAY%%NAME%{%ORANGE%Malice, Plague, Venom, Wind%NL%Kings Grace, Lawbringer,%NL%Crescent Moon, Fury,%NL%%TAN%Possible RWs:} // All tiers, 3os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=4 SWORD]: %GRAY%%NAME%{%ORANGE%Phoenix, Spirit, Voice of Reason%NL%Kingslayer, Oath, Passion,%NL%Famine, Fortitude, Hand of Justice,%NL%%TAN%Possible RWs:} // All tiers, 4os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=5 SWORD]: %GRAY%%NAME%{%ORANGE%Eternity, Grief, Honor%NL%Call to Arms, Death, Destruction,%NL%%TAN%Possible RWs:} // All tiers, 5os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=6 SWORD]: %GRAY%%NAME%{%ORANGE%Last Wish, Silence%NL%Breath of the Dying,%NL%%TAN%Possible RWs:} // All tiers, 6os
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=0 SWORD]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=2 SWORD]: %GRAY%%NAME%{%ORANGE%Steel, Strength%NL%%TAN%Possible RWs:} // All tiers, 2os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=3 SWORD]: %GRAY%%NAME%{%ORANGE%Malice, Plague, Venom, Wind%NL%Kings Grace, Lawbringer,%NL%Crescent Moon, Fury,%NL%%TAN%Possible RWs:} // All tiers, 3os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=4 SWORD]: %GRAY%%NAME%{%ORANGE%Phoenix, Spirit, Voice of Reason%NL%Kingslayer, Oath, Passion,%NL%Famine, Fortitude, Hand of Justice,%NL%%TAN%Possible RWs:} // All tiers, 4os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=5 SWORD]: %GRAY%%NAME%{%ORANGE%Eternity, Grief, Honor%NL%Call to Arms, Death, Destruction,%NL%%TAN%Possible RWs:} // All tiers, 5os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=6 SWORD]: %GRAY%%NAME%{%ORANGE%Last Wish, Silence%NL%Breath of the Dying,%NL%%TAN%Possible RWs:} // All tiers, 6os, Superior
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=0 SWORD]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=2 SWORD]: %GRAY%%NAME%{%ORANGE%Steel, Strength%NL%%TAN%Possible RWs:} // All tiers, 2os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=3 SWORD]: %GRAY%%NAME%{%ORANGE%Malice, Plague, Venom, Wind%NL%Kings Grace, Lawbringer,%NL%Crescent Moon, Fury,%NL%%TAN%Possible RWs:} // All tiers, 3os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=4 SWORD]: %GRAY%%NAME%{%ORANGE%Phoenix, Spirit, Voice of Reason%NL%Kingslayer, Oath, Passion,%NL%Famine, Fortitude, Hand of Justice,%NL%%TAN%Possible RWs:} // All tiers, 4os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=5 SWORD]: %GRAY%%NAME%{%ORANGE%Eternity, Grief, Honor%NL%Call to Arms, Death, Destruction,%NL%%TAN%Possible RWs:} // All tiers, 5os, Eth
+ItemDisplay[NMAG !INF !RW !SUP ETH SOCK=6 SWORD]: %GRAY%%NAME%{%ORANGE%Last Wish, Silence%NL%Breath of the Dying,%NL%%TAN%Possible RWs:} // All tiers, 6os, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=0 SWORD]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=2 SWORD]: %GRAY%%NAME%{%ORANGE%Steel, Strength%NL%%TAN%Possible RWs:} // All tiers, 2os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=3 SWORD]: %GRAY%%NAME%{%ORANGE%Malice, Plague, Venom, Wind%NL%Kings Grace, Lawbringer,%NL%Crescent Moon, Fury,%NL%%TAN%Possible RWs:} // All tiers, 3os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=4 SWORD]: %GRAY%%NAME%{%ORANGE%Phoenix, Spirit, Voice of Reason%NL%Kingslayer, Oath, Passion,%NL%Famine, Fortitude, Hand of Justice,%NL%%TAN%Possible RWs:} // All tiers, 4os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=5 SWORD]: %GRAY%%NAME%{%ORANGE%Eternity, Grief, Honor%NL%Call to Arms, Death, Destruction,%NL%%TAN%Possible RWs:} // All tiers, 5os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=6 SWORD]: %GRAY%%NAME%{%ORANGE%Last Wish, Silence%NL%Breath of the Dying,%NL%%TAN%Possible RWs:} // All tiers, 6os, Superior, Eth
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=0 WAND !(wnd OR ywn OR 9wn)]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=2 WAND !(wnd OR ywn OR 9wn)]: %GRAY%%NAME%{%ORANGE%Strength, White%NL%%TAN%Possible RWs:} // All tiers, 2os
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=0 WAND !(wnd OR ywn OR 9wn)]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=2 WAND !(wnd OR ywn OR 9wn)]: %GRAY%%NAME%{%ORANGE%Strength, White%NL%%TAN%Possible RWs:} // All tiers, 2os, Superior
+ItemDisplay[NMAG !INF !RW ETH SOCK=0 WAND !(wnd OR ywn OR 9wn)]: %GRAY%%NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Eth
+ItemDisplay[NMAG !INF !RW ETH SOCK=2 WAND !(wnd OR ywn OR 9wn)]: %GRAY%%NAME%{%ORANGE%Strength, White%NL%%TAN%Possible RWs:} // All tiers, 2os, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=0 WAND !(wnd OR ywn OR 9wn)]: %GRAY%%NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior, Eth
+ItemDisplay[NMAG !INF !RW SUP ETH SOCK=2 WAND !(wnd OR ywn OR 9wn)]: %GRAY%%NAME%{%ORANGE%Strength, White%NL%%TAN%Possible RWs:} // All tiers, 2os, Superior, Eth
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=2 GLOVES]: %GRAY%%NAME%{%ORANGE%Wonder, Nightfall%NL%Desire, Wonder,%NL%%TAN%Possible RWs:} // All tiers, 2os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=2 BOOTS]: %GRAY%%NAME%{%ORANGE%Voice, Time%NL%Dread, Reason,%NL%%TAN%Possible RWs:} // All tiers, 2os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=2 BELT]: %GRAY%%NAME%{%ORANGE%Void, Mystery, Mist%NL%%TAN%Possible RWs:} // All tiers, 2os
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=0 GLOVES]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=0 BOOTS]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior
+ItemDisplay[NMAG !INF !RW !SUP !ETH SOCK=0 BELT]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=2 GLOVES]: %GRAY%%NAME%{%ORANGE%Wonder, Nightfall%NL%Desire, Wonder,%NL%%TAN%Possible RWs:} // All tiers, 2os
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=2 BOOTS]: %GRAY%%NAME%{%ORANGE%Voice, Time%NL%Dread, Reason,%NL%%TAN%Possible RWs:} // All tiers, 2os
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=2 BELT]: %GRAY%%NAME%{%ORANGE%Void, Mystery, Mist%NL%%TAN%Possible RWs:} // All tiers, 2os
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=0 GLOVES]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=0 BOOTS]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior
+ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=0 BELT]: %NAME%{%ORANGE%Socket Recipe: %TAN%Forged Tool or Larzuk} // All tiers, 0os, Superior

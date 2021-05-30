@@ -1,0 +1,446 @@
+========================================================================================
+================================Small Charms (Prefixes):================================
+========================================================================================
+[Defense]:
+  Stout: +1-8 Defense (magic/rare)
+  Burly: +15-20 Defense (magic/rare)
+  Stalwart: +20-30 Defense (magic only)
+========================================================================================
+[Base Damage]:
+  Red: +1 To Minimum Damage (magic/rare)
+  Jagged: +1 To Maximum Damage (magic/rare)
+========================================================================================
+[Stamina]:
+  Rugged: +4-16 Max Stamina (magic/rare)
+========================================================================================
+[Attack Rating]:
+  Bronze: +2-12 To Attack Rating (magic/rare)
+  Iron: +13-24 To Attack Rating (magic/rare)
+  Steel: +25-36 To Attack Rating (magic only)
+  Fine: +10-20 To Attack Rating, +1-3 To Maximum Damage (magic only)
+========================================================================================
+[Mana]:
+  Lizard's: +1-7 Mana (magic/rare)
+  Snake's: +8-12 Mana (magic/rare)
+  Serpent's: +13-17 Mana (magic only)
+========================================================================================
+[All Resistances]:
+  Shimmering: All Resistances +3-5% (magic only)
+========================================================================================
+[Cold Resistance]:
+  Azure: Resist Cold +3-5% (magic/rare)
+  Lapis: Resist Cold +6-7% (magic/rare)
+  Cobalt: Resist Cold +8-9% (magic/rare)
+  Sapphire: Resist Cold +10-11% (magic only)
+========================================================================================
+[Fire Resistance]:
+  Crimson: Resist Fire +3-5% (magic/rare)
+  Russet: Resist Fire +6-7% (magic/rare)
+  Garnet: Resist Fire +8-9% (magic/rare)
+  Ruby: Resist Fire +10-11% (magic only)
+========================================================================================
+[Lightning Resistance]:
+  Tangerine: Resist Lightning +3-5% (magic/rare)
+  Ocher: Resist Lightning +6-7% (magic/rare)
+  Coral: Resist Lightning +8-9% (magic/rare)
+  Amber: Resist Lightning +10-11% (magic only)
+========================================================================================
+[Poison Resistance]:
+  Beryl: Resist Poison +3-5% (magic/rare)
+  Viridian: Resist Poison +6-7% (magic/rare)
+  Jade: Resist Poison +8-9% (magic/rare)
+  Emerald: Resist Poison +10-11% (magic only)
+========================================================================================
+[Cold Damage]:
+  Snowflake: +1-2 Minimum and +2-4 Maximum Cold Damage - 1 Second Duration (magic/rare)
+  Shivering: +3-4 Minimum and +5-8 Maximum Cold Damage - 1 Second Duration (magic/rare)
+  Boreal: +5-7 Minimum and +9-14 Maximum Cold Damage - 1 Second Duration (magic/rare)
+  Hibernal: +8-10 Minimum and +15-20 Maximum Cold Damage - 1 Second Duration (magic only)
+========================================================================================
+[Fire Damage]:
+  Ember: +1 Minimum and +2-3 Maximum Fire Damage (magic/rare)
+  Smoldering: +2-3 Minimum and +4-10 Maximum Fire Damage (magic/rare)
+  Smoking: +4-9 Minimum and +11-19 Maximum Fire Damage (magic/rare)
+  Flaming: +10-19 Minimum and +20-29 Maximum Fire Damage (magic only)
+========================================================================================
+[Lightning Damage]:
+  Static: +1 Minimum and +6-11 Maximum Lightning Damage (magic/rare)
+  Glowing: +1 Minimum and +12-24 Maximum Lightning Damage (magic/rare)
+  Arcing: +1 Minimum and +25-43 Maximum Lightning Damage (magic/rare)
+  Shocking: +1 Minimum and +44-71 Maximum Lightning Damage (magic only)
+========================================================================================
+[Poison Damage]:
+  Septic: +6 Poison damage Over 2 Seconds (magic/rare)
+  Foul: +9 Poison damage Over 2 Seconds (magic/rare)
+  Toxic: +18 Poison damage Over 2 Seconds (magic/rare)
+  Pestilent: +24 Poison damage Over 2 Seconds (magic only)
+========================================================================================
+
+
+========================================================================================
+================================Small Charms (Suffixes):================================
+========================================================================================
+[Base Damage]:
+  Craftsmanship: +1 To Maximum Damage (magic/rare)
+========================================================================================
+[Faster Hit Recovery]:
+  Balance: 5% Fast Hit Recovery (magic/rare)
+========================================================================================
+[Extra Gold From Monsters]:
+  Greed: 5-10% Extra Gold From Monsters (magic/rare)
+========================================================================================
+[Better Chance Of Getting Magic Items]:
+  Fortune: 3-5% Better Chance Of Getting Magic Items (magic/rare)
+  Good Luck: 6-7% Better Chance Of Getting Magic Items (magic only)
+========================================================================================
+[Life]:
+  Life: +5-10 Life (magic/rare)
+  Sustenance: +11-15 Life (magic/rare)
+  Vita: +16-20 Life (magic only)
+========================================================================================
+[Dexterity]:
+  Dexterity: +1-2 To Dexterity (magic/rare)
+========================================================================================
+[Strength]:
+  Strength: +1-2 To Strength (magic/rare)
+========================================================================================
+[Faster Run/Walk]:
+  Inertia: 3% Faster Run/Walk (magic/rare)
+========================================================================================
+[Cold Damage]:
+  Frost: +1 Minimum and +2 Maximum Cold Damage - 1 Second Duration (magic/rare)
+  Icicle: +2 Minimum and +3-4 Maximum Cold Damage - 1 Second Duration (magic/rare)
+  Glacier: +3 Minimum and +5-6 Maximum Cold Damage - 1 Second Duration (magic/rare)
+  Winter: +4-5 Minimum and +7-9 Maximum Cold Damage - 1 Second Duration (magic only)
+========================================================================================
+[Fire Damage]:
+  Flame: +1 Minimum and +2 Maximum Fire Damage (magic/rare)
+  Fire: +2 Minimum and +3-4 Maximum Fire Damage (magic/rare)
+  Burning: +3-4 Minimum and +5-8 Maximum Fire Damage (magic/rare)
+  Incineration: +5-7 Minimum and +9-13 Maximum Fire Damage (magic only)
+========================================================================================
+[Lightning Damage]:
+  Shock: +1 Minimum and +3-6 Maximum Lightning Damage (magic/rare)
+  Lightning: +1 Minimum and +7-10 Maximum Lightning Damage (magic/rare)
+  Thunder: +1 Minimum and +11-18 Maximum Lightning Damage (magic/rare)
+  Storms: +1 Minimum and +19-28 Maximum Lightning Damage (magic only)
+========================================================================================
+[Poison Damage]:
+  Blight: +3 Poison damage Over 2 Seconds (magic/rare)
+  Venom: +6 Poison damage Over 2 Seconds (magic/rare)
+  Pestilence: +8 Poison damage Over 2 Seconds (magic/rare)
+  Anthrax: +50 Poison damage Over 6 Seconds (magic only)
+========================================================================================
+
+
+========================================================================================
+================================Large Charms (Prefixes):================================
+========================================================================================
+[Defense]:
+  Stout: +2-12 Defense (magic/rare)
+  Burly: +13-30 Defense (magic/rare)
+  Stalwart: +30-60 Defense (magic only)
+========================================================================================
+[Base Damage]:
+  Red: +1 To Minimum Damage (magic/rare)
+  Sanguinary: +2 To Minimum Damage (magic only)
+  Jagged: +1 To Maximum Damage (magic/rare)
+  Forked: +2 To Maximum Damage (magic only)
+========================================================================================
+[Stamina]:
+  Rugged: +4-16 Max Stamina (magic/rare)
+========================================================================================
+[Attack Rating]:
+  Bronze: +4-25 To Attack Rating (magic/rare)
+  Iron: +39-51 To Attack Rating (magic/rare)
+  Steel: +52-64 To Attack Rating (magic only)
+  Fine: +10-20 To Attack Rating, +1-3 To Maximum Damage (magic/rare)
+  Sharp: +21-48 To Attack Rating, +4-6 To Maximum Damage (magic only)
+========================================================================================
+[Better Chance Of Getting Magic Items]:
+  Lucky: 1-3% Better Chance Of Getting Magic Items (magic/rare)
+  Lucky: 4-6% Better Chance Of Getting Magic Items (magic only)
+========================================================================================
+[Mana]:
+  Lizard's: +2-12 Mana (magic/rare)
+  Snake's: +13-23 Mana (magic/rare)
+  Serpent's: +24-34 Mana (magic/rare)
+========================================================================================
+[All Resistances]:
+  Shimmering: All Resistances +3-8% (magic only)
+========================================================================================
+[Cold Resistance]:
+  Azure: Resist Cold +4-7% (magic/rare)
+  Lapis: Resist Cold +8-10% (magic/rare)
+  Cobalt: Resist Cold +11-12% (magic/rare)
+  Sapphire: Resist Cold +13-15% (magic only)
+========================================================================================
+[Fire Resistance]:
+  Crimson: Resist Fire +4-7% (magic/rare)
+  Russet: Resist Fire +8-10% (magic/rare)
+  Garnet: Resist Fire +11-12% (magic/rare)
+  Ruby: Resist Fire +13-15% (magic only)
+========================================================================================
+[Lightning Resistance]:
+  Tangerine: Resist Lightning +4-7% (magic/rare)
+  Ocher: Resist Lightning +8-10% (magic/rare)
+  Coral: Resist Lightning +11-12% (magic/rare)
+  Amber: Resist Lightning +13-15% (magic only)
+========================================================================================
+[Poison Resistance]:
+  Beryl: Resist Poison +4-7% (magic/rare)
+  Viridian: Resist Poison +8-10% (magic/rare)
+  Jade: Resist Poison +11-12% (magic/rare)
+  Emerald: Resist Poison +13-15% (magic only)
+========================================================================================
+[Cold Damage]:
+  Frost: +2-3 Minimum and +3-5 Maximum Cold Damage - 1 Second Duration (magic/rare)
+  Icicle: +4-5 Minimum and +6-10 Maximum Cold Damage - 1 Second Duration (magic/rare)
+  Glacier: +6-10 Minimum and +11-20 Maximum Cold Damage - 1 Second Duration (magic/rare)
+  Winter: +11-15 Minimum and +21-30 Maximum Cold Damage - 1 Second Duration (magic only)
+========================================================================================
+[Fire Damage]:
+  Flame: +1 Minimum and +2-3 Maximum Fire Damage (magic/rare)
+  Fire: +2-3 Minimum and +4-12 Maximum Fire Damage (magic/rare)
+  Burning: +4-9 Minimum and +13-27 Maximum Fire Damage (magic/rare)
+  Incineration: +10-27 Minimum and +28-43 Maximum Fire Damage (magic only)
+========================================================================================
+[Lightning Damage]:
+  Shock: +1 Minimum and +5-9 Maximum Lightning Damage (magic/rare)
+  Lightning: +1 Minimum and +10-26 Maximum Lightning Damage (magic/rare)
+  Thunder: +1 Minimum and +27-58 Maximum Lightning Damage (magic/rare)
+  Storms: +1 Minimum and +59-90 Maximum Lightning Damage (magic only)
+========================================================================================
+[Poison Damage]:
+  Blight: +3 Poison Damage Over 2 Seconds (magic/rare)
+  Venom: +9 Poison Damage Over 2 Seconds (magic/rare)
+  Pestilence: +18 Poison damage Over 2 Seconds (magic/rare)
+  Anthrax: +36 Poison damage Over 2 Seconds (magic only)
+========================================================================================
+[Fire Skills]:
+  Flaming: +1 to Fire Skills (magic/rare)
+========================================================================================
+[Cold Skills]:
+  Freezing: +1 to Cold Skills (magic/rare)
+========================================================================================
+[Lightning Skills]:
+  Static: +1 to Lightning Skills (magic/rare)
+========================================================================================
+[Poison Skills]:
+  Toxic: +1 to Poison Skills (magic/rare)
+========================================================================================
+[Magic Skills]:
+  Rainbow: +1 to Magic Skills (magic/rare)
+========================================================================================
+
+
+========================================================================================
+================================Large Charms (Suffixes):================================
+========================================================================================
+[Base Damage]:
+  Craftsmanship: +1 To Maximum Damage (magic/rare)
+  Quality: +2 To Maximum Damage (magic only)
+========================================================================================
+[Faster Hit Recovery]:
+  Balance: 8% Fast Hit Recovery (magic/rare)
+========================================================================================
+[Extra Gold From Monsters]:
+  Greed: 5-22% Extra Gold From Monsters (magic/rare)
+========================================================================================
+[Life]:
+  Life: +6-15 Life (magic/rare)
+  Sustenance: +16-25 Life (magic/rare)
+  Vita: +26-35 Life (magic only)
+========================================================================================
+[Dexterity]:
+  Dexterity: +2-5 To Dexterity (magic/rare)
+========================================================================================
+[Strength]:
+  Strength: +2-5 To Strength (magic/rare)
+========================================================================================
+[Faster Run/Walk]:
+  Inertia: 5% Faster Run/Walk (magic/rare)
+========================================================================================
+[Cold Damage]:
+  Frost: +1 Minimum and +2-3 Maximum Cold Damage - 1 Second Duration (magic/rare)
+  Icicle: +2 Minimum and +4-5 Maximum Cold Damage - 1 Second Duration (magic/rare)
+  Glacier: +3 Minimum and +6-8 Maximum Cold Damage - 1 Second Duration (magic/rare)
+  Winter: +4-6 Minimum and +9-12 Maximum Cold Damage - 1 Second Duration (magic only)
+========================================================================================
+[Fire Damage]:
+  Flame: +1 Minimum and +2 Maximum Fire Damage (magic/rare)
+  Fire: +2 Minimum and +3-5 Maximum Fire Damage (magic/rare)
+  Burning: +3-5 Minimum and +6-11 Maximum Fire Damage (magic/rare)
+  Incineration: +6-10 Minimum and +12-17 Maximum Fire Damage (magic only)
+========================================================================================
+[Lightning Damage]:
+  Shock: +1 Minimum and +3-5 Maximum Lightning Damage (magic/rare)
+  Lightning: +1 Minimum and +6-13 Maximum Lightning Damage (magic/rare)
+  Thunder: +1 Minimum and +14-25 Maximum Lightning Damage (magic/rare)
+  Storms: +1 Minimum and +26-38 Maximum Lightning Damage (magic only)
+========================================================================================
+[Poison Damage]:
+  Blight: +3 Poison damage Over 2 Seconds (magic/rare)
+  Venom: +6 Poison damage Over 2 Seconds (magic/rare)
+  Pestilence: +9 Poison damage Over 2 Seconds (magic/rare)
+  Anthrax: +12 Poison damage Over 2 Seconds (magic only)
+========================================================================================
+
+
+========================================================================================
+================================Grand Charms (Prefixes):================================
+========================================================================================
+  Stout: +3-12 Defense (magic/rare)
+  Burly: +13-30 Defense (magic/rare)
+  Stalwart: +33-100 Defense (magic only)
+========================================================================================
+[Base Damage]:
+  Red: +1 To Minimum Damage (magic/rare)
+  Sanguinary: +2 To Minimum Damage (magic/rare)
+  Bloody: +3 To Minimum Damage (magic only)
+  Jagged: +1 To Maximum Damage (magic/rare)
+  Forked: +2 To Maximum Damage (magic/rare)
+  Serrated: +3 To Maximum Damage (magic only)
+========================================================================================
+[Stamina]:
+  Rugged: +12-50 Max Stamina (magic/rare)
+========================================================================================
+[Attack Rating]:
+  Bronze: +6-42 To Attack Rating (magic/rare)
+  Iron: +43-87 To Attack Rating (magic/rare)
+  Steel: +88-132 To Attack Rating (magic only)
+  Fine: +10-48 To Attack Rating, +1-6 To Maximum Damage (magic/rare)
+  Sharp: +49-76 To Attack Rating, +7-10 To Maximum Damage (magic only)
+========================================================================================
+[Better Chance Of Getting Magic Items]:
+  Lucky: 1-7% Better Chance Of Getting Magic Items (magic/rare)
+  Lucky: 8-12% Better Chance Of Getting Magic Items (magic only)
+========================================================================================
+[Mana]:
+  Lizard's: +3-20 Mana (magic/rare)
+  Snake's: +21-39 Mana (magic/rare)
+  Serpent's: +40-59 Mana (magic/rare)
+========================================================================================
+[All Resistances]:
+  Shimmering: All Resistances +3-15% (magic only)
+========================================================================================
+[Cold Resistance]:
+  Azure: Resist Cold +7-15% (magic/rare)
+  Lapis: Resist Cold +16-20% (magic/rare)
+  Cobalt: Resist Cold +21-25% (magic/rare)
+  Sapphire: Resist Cold +26-30% (magic only)
+========================================================================================
+[Fire Resistance]:
+  Crimson: Resist Fire +7-15% (magic/rare)
+  Russet: Resist Fire +16-20% (magic/rare)
+  Garnet: Resist Fire +21-25% (magic/rare)
+  Ruby: Resist Fire +26-30% (magic only)
+========================================================================================
+[Lightning Resistance]:
+  Tangerine: Resist Lightning +7-15% (magic/rare)
+  Ocher: Resist Lightning +16-20% (magic/rare)
+  Coral: Resist Lightning +21-25% (magic/rare)
+  Amber: Resist Lightning +26-30% (magic only)
+========================================================================================
+[Poison Resistance]:
+  Beryl: Resist Poison +7-15% (magic/rare)
+  Viridian: Resist Poison +16-20% (magic/rare)
+  Jade: Resist Poison +21-25% (magic/rare)
+  Emerald: Resist Poison +26-30% (magic only)
+========================================================================================
+[+1 to Skill Tree]:
+  Fletcher's: +1 Amazon Bow and Crossbow Skills (magic/rare)
+  Acrobat's: +1 Amazon Passive Skills (magic/rare)
+  Harpoonist's: +1 Amazon Javelin and Spear Skills (magic/rare)
+  Burning: +1 Sorceress Fire Skills (magic/rare)
+  Sparking: +1 Sorceress Lightning Skills (magic/rare)
+  Chilling: +1 Sorceress Cold Skills (magic/rare)
+  Hexing: +1 Necromancer Curses (magic/rare)
+  Fungal: +1 Necromancer Poison and Bone Spells (magic/rare)
+  Graverobber's: +1 Necromancer Summoning Spells (magic/rare)
+  Lion Branded: +1 Paladin Combat Skills (magic/rare)
+  Captain's: +1 Paladin Offensive Auras (magic/rare)
+  Preserver's: +1 Paladin Defensive Auras (magic/rare)
+  Sounding: +1 Barbarian Warcries (magic/rare)
+  Fanatic: +1 Barbarian Combat Masteries (magic/rare)
+  Expert's: +1 Barbarian Masteries (magic/rare)
+  Trainer's: +1 Druid Summoning (magic/rare)
+  Spiritual: +1 Druid Shapeshifting (magic/rare)
+  Nature's: +1 Druid Elemental (magic/rare)
+  Entrapping: +1 Assassin Traps (magic/rare)
+  Mentalist's: +1 Assassin Shadow Disciplines (magic/rare)
+  Shogukusha's: +1 Assassin Martial Arts (magic/rare)
+========================================================================================
+[Cold Damage]:
+  Frost: +1 Minimum and +2-3 Maximum Cold Damage - 1 Second Duration (magic/rare)
+  Icicle: +2-4 Minimum and +4-8 Maximum Cold Damage - 1 Second Duration (magic/rare)
+  Glacier: +5-7 Minimum and +9-15 Maximum Cold Damage - 1 Second Duration (magic/rare)
+  Winter: +8-13 Minimum and +16-25 Maximum Cold Damage - 1 Second Duration (magic only)
+========================================================================================
+[Fire Damage]:
+  Flame: +1 Minimum and +2-3 Maximum Fire Damage (magic/rare)
+  Fire: +2-3 Minimum and +4-7 Maximum Fire Damage (magic/rare)
+  Burning: +4-7 Minimum and +8-19 Maximum Fire Damage (magic/rare)
+  Incineration: +8-18 Minimum and +20-36 Maximum Fire Damage (magic only)
+========================================================================================
+[Lightning Damage]:
+  Shock: +1 Minimum and +4-5 Maximum Lightning Damage (magic/rare)
+  Lightning: +1 Minimum and +6-17 Maximum Lightning Damage (magic/rare)
+  Thunder: +1 Minimum and +18-44 Maximum Lightning Damage (magic/rare)
+  Storms: +1 Minimum and +45-79 Maximum Lightning Damage (magic only)
+========================================================================================
+[Poison Damage]:
+  Blight: +8 Poison Damage Over 2 Seconds (magic/rare)
+  Venom: +15 Poison Damage Over 2 Seconds (magic/rare)
+  Pestilence: +39 Poison Damage Over 2 Seconds (magic/rare)
+  Anthrax: +68 Poison Damage Over 2 Seconds (magic only)
+========================================================================================
+
+
+========================================================================================
+================================Grand Charms (Suffixes):================================
+========================================================================================
+[Base Damage]:
+  Craftsmanship: +1 To Maximum Damage (magic/rare)
+  Quality: +2 To Maximum Damage (magic/rare)
+  Maiming: +3-4 To Maximum Damage (magic only)
+========================================================================================
+[Faster Hit Recovery]:
+  Balance: 12% Fast Hit Recovery (magic/rare)
+========================================================================================
+[Extra Gold From Monsters]:
+  Greed: 10-40% Extra Gold From Monsters (magic/rare)
+========================================================================================
+[Dexterity]:
+  Dexterity: +3-6 To Dexterity (magic/rare)
+========================================================================================
+[Strength]:
+  Strength: +3-6 To Strength (magic/rare)
+========================================================================================
+[Faster Run/Walk]:
+  Inertia: 7% Faster Run/Walk (magic/rare)
+========================================================================================
+[Cold Damage]:
+  Frost: +1 Minimum and +2 Maximum Cold Damage - 1 Second Duration (magic/rare)
+  Icicle: +2 Minimum and +3-4 Maximum Cold Damage - 1 Second Duration (magic/rare)
+  Glacier: +3 Minimum and +5-7 Maximum Cold Damage - 1 Second Duration (magic/rare)
+  Winter: +4-6 Minimum and +8-11 Maximum Cold Damage - 1 Second Duration (magic only)
+========================================================================================
+[Fire Damage]:
+  Flame: +1 Minimum and +2 Maximum Fire Damage (magic/rare)
+  Fire: +1-2 Minimum and +3 Maximum Fire Damage (magic/rare)
+  Burning: +2-3 Minimum and +4-7 Maximum Fire Damage (magic/rare)
+  Incineration: +4-7 Minimum and +8-14 Maximum Fire Damage (magic only)
+========================================================================================
+[Lightning Damage]:
+  Shock: +1 Minimum and +2-3 Maximum Lightning Damage (magic/rare)
+  Lightning: +1 Minimum and +4-7 Maximum Lightning Damage (magic/rare)
+  Thunder: +1 Minimum and +8-21 Maximum Lightning Damage (magic/rare)
+  Storms: +1 Minimum and +22-33 Maximum Lightning Damage (magic only)
+========================================================================================
+[Poison Damage]:
+  Blight: +2-7 Poison Damage Over 2 Seconds (magic/rare)
+  Venom: +3-9 Poison Damage Over 2 Seconds (magic/rare)
+  Pestilence: +6-14 Poison Damage Over 2 Seconds (magic/rare)
+  Anthrax: +13-25 Poison Damage Over 2 Seconds (magic only)
+========================================================================================
